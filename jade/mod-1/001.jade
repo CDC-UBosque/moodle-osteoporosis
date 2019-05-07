@@ -1,0 +1,69 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 1
+				+banner-video('banner-mod-1')
+				
+				h2 Módulo 1 / 
+					span Carga de la Enfermedad para el Sistema de Salud
+				
+				p 
+					strong Dr. Alvaro Fernando Burbano Delgado.
+					| Médico Cirujano Universidad El Bosque. Especialista en Medicina Familiar Universidad El Bosque. Especialista en Gerencia de la Calidad en Salud Universidad El Bosque. Profesor Asociado Programa de Especialización Universidad El Bosque. Investigador Clínico en Diabetes. Miembro de Número Socmef (Sociedad Colombiana de Medicina Familiar), Miembro de Número SOLAT (Sociedad Latinoiamericana de Ateroesclerosis Capítulo Colombia). Miembro Junta Directiva ACIC (Asociación Colombiana Centros de Investigación Clínica) 2012 – 2014.
+					
+				h3 1. Objetivos de aprendizaje. 
+				
+				p Al finalizar el módulo el participante estará en capacidad de:
+				
+				//- Tabs
+				div.bs-docs
+					ul#myTab.nav.nav-tabs
+						li.active
+							a(href='#1' data-toggle='tab') 1
+						li
+							a(href='#2' data-toggle='tab') 2
+					div#myTabContent.tab-content
+						div.tab-pane.fade.active.in#1
+							p Identificar a la osteoporosis como una enfermedad prevalente.
+						div.tab-pane.fade#2
+							p Reconocer que la carga de la enfermedad por osteoporosis es importante para el sistema de salud.
+							
+				h3 2. Introducción.
+				
+				p La osteoporosis es una enfermedad prevalente que afecta la densidad y calidad ósea, aumentando el riesgo de fractura. Se caracteriza por una pérdida ósea, la cual es silente, asintomática y progresiva hasta que ocurre una fractura por fragilidad.
+				p Se estima que 1 de cada 5 hombres y 1 de cada 3 mujeres mayores de 50 años experimentará una fractura por fragilidad. (International Osteoporosis Foundation IOF 2018), (Thomas J, et al 2003).
+				p Las mujeres que han presentado una fractura previa tienen un 84% más riesgo de tener una fractura posterior, 1 de cada 5 mujeres postmenopáusicas, con fractura vertebral previa tendrá otra fractura en el año siguiente. Por lo anterior no solo es importante tratar la fractura ya existente sino prevenir una nueva fractura. (Kanis JA, et al. 2004), (Lindsay R, et al. 2001), (International Osteoporosis Foundation IOF 2018).  
+				p En América Latina, la osteoporosis y las fracturas relacionadas están en aumento debido al envejecimiento de la población y los cambios en el estilo de vida. En muchos países de la región, el número de fracturas por osteoporosis será más del doble en 2050.
+				p Las fracturas secundarias a osteoporosis tienen un impacto importante en la calidad de vida de los pacientes que la sufren, por la discapacidad permanente que pueden generar, la dependencia funcional que conlleva y el riesgo de muerte al que están expuestos más aun en personas mayores. (Cooper C. et al. 1997).
+				p La morbimortalidad relacionada con las fracturas también se relaciona con importantes costos económicos por hospitalizaciones, cirugías, atención domiciliaria, discapacidad y rehabilitación. (Medina A. et al. 2018 II Consenso Colombiano para el manejo de la Osteoporosis Postmenopáusica)
+				p Desafortunadamente a pesar de lo anterior la no existe una política gubernamental en Colombia que contemple a la osteoporosis como una prioridad en salud.
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=296499&chapterid=8890', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

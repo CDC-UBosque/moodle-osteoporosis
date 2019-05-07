@@ -1,0 +1,67 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 2
+				+banner-video('banner-mod-2')
+				
+				h2 Módulo 2 / 
+					span Fisiopatología de la Osteoporosis.
+				
+				p 
+					strong Dr. Henry Mauricio Arenas Quintero:
+					| Médico Endocrinólogo Universidad Nacional de Colombia, Presidente capítulo eje cafetero Asociación Colombiana de Endocrinología, Miembro Asociación Colombiana de Osteoporosis ACOMM, Densitometrista clínico ISCD, PUJ, Docente de cátedra posgrado de Medicina Interna, Universidad Tecnológica de Pereira.
+					
+				h3 1. Objetivos de aprendizaje. 
+				
+				p Al finalizar el módulo el participante estará en capacidad de:
+				
+				//- Tabs
+				div.bs-docs
+					ul#myTab.nav.nav-tabs
+						li.active
+							a(href='#1' data-toggle='tab') 1
+						li
+							a(href='#2' data-toggle='tab') 2
+						li
+							a(href='#3' data-toggle='tab') 3
+					div#myTabContent.tab-content
+						div.tab-pane.fade.active.in#1
+							p Recordar los procesos embriológicos de formación del tejido óseo
+						div.tab-pane.fade#2
+							p Comprender de manera clara los mecanismos de remodelación ósea
+						div.tab-pane.fade#3
+							p Conocer las vías metabólicas y de señalización celular involucradas en la fisiopatología de la osteoporosis.
+							
+				h3 2. Introducción.
+				
+				p La osteoporosis se ha denominado la epidemia silenciosa del siglo XXI, por sus connotaciones en costos y  la discapacidad que genera para el paciente e indirectamente a sus cuidadores, cuando se presenta una fractura. La osteoporosis es una enfermedad de todo el esqueleto caracterizada por una baja masa ósea y una alteración de la microarquitectura ósea que condiciona un hueso frágil en el que consecuentemente se incrementa el riesgo de fracturas. Por esta razón es clave conocer los procesos que alteran la resistencia ósea, determinada por la densidad mineral ósea y la microarquitectura, para así poder evitar todo aquello que altere la calidad ósea en nuestros pacientes y los exponga a un mayor riesgo de fractura. En este capítulo se revisarán brevemente los procesos implicados en la fisiopatología de la osteoporosis. Iniciando por el proceso de formación ósea y luego revisando el concepto de remodelación ósea, y como la alteración de este último lleva a perdida de la resistencia ósea, osteoporosis y fractura. 
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=296899&chapterid=8902', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

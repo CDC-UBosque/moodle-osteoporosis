@@ -1,0 +1,53 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 2
+				+banner-video('banner-mod-2')
+				
+				h2 Módulo 2 / 
+					span Fisiopatología de la Osteoporosis.
+					
+				h3 10. Bibliografía.
+				
+				ol
+					li Greenspan´s Basic and clinical endocrinology. 10th ed. Chapter 8.
+					li Langman Embriología Medica. 13 ed. 2016. Chapter 10
+					li Bilezikian J. Primer on the metabolic bone disease and disorders of mineral metabolism. 9th ed. 2019. Chapter 2
+					li Melmed Schlomo. Willliams, Tratado de Endocrinología 13 ed. 2016. Chapter 29
+					li Gonzalez S J, Fisiopatología de la osteoporosis. Medicine 2006;9 extr 1-7
+					li González Macias J, Olmos Martínez JM. Fisiopatología de la osteoporosis y mecanismo de acción de la PTH. Rev Osteoporos Metab Miner 2010;2 (Supl 2): S5-S17
+					li Manolagas S. Pathogenesis of osteoporosis. UpToDate 2019.
+					li Southard RN, et al. Bone mass in healthy children: measurement with quantitative DXA. Radiology. 1991;179:735
+					li  Kelly TL. Bone mineral reference databases for American men and women. J Bone Miner Res. 1990;5(Suppl 2):702.
+					li Baron R, Kneissel M. WNT signaling in bone homeostasis and disease: from human mutations to treatments.Nature Medicine. 2013;19:179-192
+					li Rivadeneira F, Mäkitie O. Osteoporosis and Bone Mass Disorders: From Gene Pathways to Treatments. Trends in endocrinology and metabolism. 2016;27(5): 262-281 
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=296899&chapterid=8905', 'back', 'Anterior', '#', 'disabled', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

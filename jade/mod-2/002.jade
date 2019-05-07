@@ -1,0 +1,97 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 2
+				+banner-video('banner-mod-2')
+				
+				h2 Módulo 2 / 
+					span Fisiopatología de la Osteoporosis.
+					
+				h3 3. ¿Cuáles son las funciones del hueso?
+				
+				p El hueso tiene cuatro funciones principales: 
+				
+				//- Tabs
+				div.bs-docs
+					ul#myTab.nav.nav-tabs
+						li.active
+							a(href='#1' data-toggle='tab') 1
+						li
+							a(href='#2' data-toggle='tab') 2
+						li
+							a(href='#3' data-toggle='tab') 3
+						li
+							a(href='#3' data-toggle='tab') 4
+					div#myTabContent.tab-content
+						div.tab-pane.fade.active.in#1
+							p Proporcionar soporte rígido para extremidades y cavidades corporales que contienen órganos vitales.
+						div.tab-pane.fade#2
+							p Los huesos son cruciales para la locomoción ya que proporcionan eficiencia. Palancas y sitios de fijación para los músculos. 
+						div.tab-pane.fade#3
+							p El hueso proporciona una gran reserva de iones, como calcio, fosfato, magnesio y sodio, que son críticos para la vida y pueden ser movilizados cuando el entorno externo no los proporciona. 
+						div.tab-pane.fade#4
+							p El hueso aloja a los elementos hematopoyéticos. (Greenspan´s Basic and clinical endocrinology. 10th ed. Chapter 8.)
+							
+				h3 4. ¿Cómo se compone el esqueleto?
+				
+				p El esqueleto de los vertebrados se subdivide en un componente axial y un componente apendicular. El componente axial comprende el cráneo, la columna vertebral, el esternón y las costillas. El componente apendicular comprende huesos largos y sus apéndices. Hay dos tipos principales de hueso en el esqueleto adulto. El hueso cortical es denso y compacto (ver figura No 1). Constituye la parte exterior de todas las estructuras esqueléticas. Las láminas pueden ser extensas circunferenciales o bien empaquetadas en círculos concéntricos en las osteonas. El hueso cortical comprende el 80 por ciento del peso esquelético. Su función principal es proporcionar resistencia mecánica y protección, pero puede participar en las respuestas metabólicas, particularmente cuando hay un déficit mineral grave o prolongado. (Langman. Embriología médica. 13th ed 2016)
+				p El hueso trabecular o esponjoso (ver figura No 2) se encuentra dentro de los huesos largos particularmente en los extremos, a través de los cuerpos de las vértebras y en las partes internas de la pelvis y otros huesos grandes y planos. El hueso trabecular es un importante contribuyente al soporte mecánico, particularmente en las vértebras. También es más activo metabólicamente que el hueso cortical y proporciona los suministros iniciales de mineral en estados de deficiencia aguda. (Langman. Embriología médica. 13th ed 2016)
+				
+				
+				//- imagen o video				
+				div.banner-video
+					div.span8
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/osteoporosis-amgen/images/mod2/0001.png' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/osteoporosis-amgen/images/mod2/0001.png' alt='image-1')
+					div.span4
+						div.img-footer
+							span 
+								b Figura No 1. Hueso compacto.
+								| Creditos: Cortesia de U.S. National Cancer Institute's Surveillance, Epidemiology and End Results (SEER) Program, modified by Marianna Ruiz Villarreal (User:LadyofHats/Wikimedia Commons) for CK-12 Foundation; Tomado de: 
+								a(href='http://commons.wikimedia.org/wiki/File:Illu_compact_spongy_bone.jpg' target='_blank') http://commons.wikimedia.org/wiki/File:Illu_compact_spongy_bone.jpg
+								
+								
+				//- imagen o video				
+				div.banner-video
+					div.span8
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/osteoporosis-amgen/images/mod2/0002.png' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/osteoporosis-amgen/images/mod2/0002.png' alt='image-1')
+					div.span4
+						div.img-footer
+							span 
+								b Figura No 2. Hueso trabecular.
+								| Tomado de: Tortora, G. y Derrickson, B. Principles of anatomy and physiology. Volume 1. 12 th ed. 2009.
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=296899&chapterid=8901', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=296899&chapterid=8903', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

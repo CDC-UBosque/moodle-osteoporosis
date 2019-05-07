@@ -1,0 +1,37 @@
+// -----------------------
+// banner home
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	#footer,
+	#footer-2{
+		background: none;
+	    max-width: 21rem;
+	    margin: 2rem auto;
+	    float: none;
+	    box-sizing: border-box;
+	    text-align: center;
+	    
+	    @media (max-width: 767px){
+		    width: 9rem;
+	    }
+	    
+	    
+	    div:last-child{
+		    margin-top: 0.7rem;
+		    
+		    p{
+				font-size: 0.7rem;
+		    }
+		    
+	    }
+	    
+	}
+	
+}
+
+/*#footer #myBtn{
+	display: block;
+}*/

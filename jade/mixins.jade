@@ -1,0 +1,95 @@
+//- ---------------------------- menu ------------------------------- //
+mixin menu
+	div#menu
+
+//- ---------------------------- footer ------------------------------- //
+mixin footer
+	div.container-fluid
+		div.row-fluid
+			div.span#footer
+			
+mixin footer-interno
+	div.container-fluid
+		div.row-fluid
+			div.span#footer-2
+			
+//- ---------------------------- banner ------------------------------- //
+mixin banner-image
+	div.banner-home
+		div.image
+			div#banner
+		div.title-bg
+		div.title
+			div Diplomado Virtual
+			div Osteoporosis
+			
+mixin banner-video(modnumber)
+	div.banner-videos
+		//- <div class="video-cc wow animated fadeInLeft" id="video">
+		//- 	<div class="embed-container">
+		//- 		<iframe src="https://drive.google.com/file/d/1c7XJIQhcWunMRWmM6HdvQgyJFZUymKGf/preview"></iframe>
+		//- 	</div>
+		//- </div>
+		div(id=modnumber)
+		div.title-bg
+		div.title
+			div Diplomado Virtual
+			div Osteoporosis
+
+//- ---------------------------- paginador ------------------------------- //
+mixin link(href, name)
+	//- attributes == {class: "btn"}
+	a(href=href)= name
+	
+	//- +link('/foo', 'foo')(class="btn")
+
+
+
+mixin paginador(linkatras, class1, Anterior, linkadelante, class2, Siguiente)
+	div.progress-fullbar
+		div.pager
+			div.paginas
+				ul
+					li.previous
+						a(href=linkatras class=class1)
+							i.fa.fa-angle-left(aria-hidden="true")
+							| &nbsp;
+							span= Anterior 
+					li.next
+						a(href=linkadelante class=class2)
+							span= Siguiente 
+							| &nbsp;
+							i.fa.fa-angle-right(aria-hidden="true")
+			div.counter
+				<p><span class="eta"></span> (<!--<span class="words"></span>--> &cong; Tiempo de lectura )</p>
+			div.menuanchorbot
+				a.btn-primary(href="#menuanchor-top") Menú
+				//- <a href="#" id="scrollup">Scroll</a>
+		div.progressContainer
+			div#progress.progress
+			
+mixin menu-simple
+	div.progress-fullbar.simple
+		div.pager
+			div.menuanchorbot
+				a.btn-primary(href="#menuanchor-top") Menú
+					
+//- ---------------------------- progreso modulo ------------------------------- //
+mixin progreso-modulo(numero)
+	div.progreso
+		h2 Progreso módulo
+		div(id=numero)
+
+//- ---------------------------- material modulo ------------------------------- //
+mixin material-modulo(id)
+	div.container-fluid
+		div.row-fluid.wow.fadeInUp.material-modulo
+			div(id=id)
+			
+//- ---------------------------- Codigos modulos ------------------------------- //
+				
+				
+				
+				
+				
+				

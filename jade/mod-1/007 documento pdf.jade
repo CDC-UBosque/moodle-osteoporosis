@@ -1,0 +1,46 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 1
+				+banner-video('banner-mod-1')
+				
+				h2 Módulo 1 / 
+					span Carga de la Enfermedad para el Sistema de Salud
+					
+				h3 The Latin America regional audit - epidemiología, costos e impacto de la osteoporosis en 2012
+				
+				div.banner-video.wow.fadeInUp
+					div.span12
+						div#video
+							div.embed-container
+								iframe(src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/osteoporosis-amgen/pdf/mod1/2012-Latin_America_Audit-ES_0_0.pdf" frameborder="0" allowfullscreen)
+
+
+	//- Material modulo
+	+material-modulo('material-mod-1')
+							
+	//- footer section
+	+footer-interno
+	
+	//- progrso y contador
+	+menu-simple
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

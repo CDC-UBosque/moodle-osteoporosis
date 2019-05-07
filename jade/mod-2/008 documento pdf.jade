@@ -1,0 +1,46 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 1
+				+banner-video('banner-mod-2')
+				
+				h2 Módulo 2 / 
+					span Fisiopatología de la Osteoporosis.
+					
+				h3 New insights into osteoclastogenic signaling mechanisms
+				
+				div.banner-video.wow.fadeInUp
+					div.span12
+						div#video
+							div.embed-container
+								iframe(src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/osteoporosis-amgen/pdf/mod2/new-insight-in-osteoclastogenesis-2012.pdf" frameborder="0" allowfullscreen)
+
+
+	//- Material modulo
+	+material-modulo('material-mod-2')
+							
+	//- footer section
+	+footer-interno
+	
+	//- progrso y contador
+	+menu-simple
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

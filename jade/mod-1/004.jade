@@ -1,0 +1,131 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 1
+				+banner-video('banner-mod-1')
+				
+				h2 Módulo 1 / 
+					span Carga de la Enfermedad para el Sistema de Salud
+					
+				h3 6. ¿La osteoporosis se considera una prioridad de salud en Colombia?
+				
+				p Actualmente no existe ningún registro nacional de fracturas de cadera en Colombia, adicionalmente la osteoporosis no se considera una prioridad de salud pública. La osteoporosis se subtratada y subdiagnosticada, se priorizan otras enfermedades tales como la diabetes, hipertensión arterial, enfermedad cardiovascular y enfermedad pulmonar obstructiva crónica, adicionalmente en Colombia los médicos de atención primaria no supervisan el cuidado principal de los pacientes con osteoporosis, en lugar de ello, la atención de estos pacientes recae en diferentes especialidades como reumatología, ginecología, endocrinología, ortopedia y geriatría.
+				p Según el estudio AUDIT, la osteoporosis se considera una prioridad de salud en solo tres de los 14 países donde se realizó el estudio: Brasil, Cuba y México.
+				p De los 14 países, solo los gobiernos de Bolivia y Cuba, aprobaron las guías de manejo existentes. (THE LATIN AMERICA REGIONAL AUDIT. Epidemiology, costs and burden of osteporosis in 2012).
+ 
+				p En Bolivia, Argentina, Chile, Colombia, Costa Rica, Guatemala, Nicaragua, Panamá, Venezuela y Uruguay la osteoporosis no se reconoce como un problema de salud importante y no existen programas de concientización pública por parte del estado que cubran la prevención, el diagnóstico o el tratamiento de la osteoporosis. (ver tabla No 1) (THE LATIN AMERICA REGIONAL AUDIT. Epidemiology, costs and burden of osteporosis in 2012).
+				
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla No 1. Panorama de la osteoporosis en salud pública. (Adaptado de: THE LATIN AMERICA REGIONAL AUDIT. Epidemiology, costs and burden of osteporosis in 2012)
+					thead
+						tr
+							th País
+							th La osteoporosis es una prioridad en salud
+							th Guías para tratamiento de la osteoporosis
+							th Guías respaldadas por el gobierno
+					tbody
+						tr
+							td Argentina
+							td &nbsp;
+							td <i class="fa fa-check" aria-hidden="true"></i>
+							td &nbsp;
+						tr
+							td Bolivia
+							td &nbsp;
+							td <i class="fa fa-check" aria-hidden="true"></i>
+							td <i class="fa fa-check" aria-hidden="true"></i>
+						tr
+							td Brasil
+							td <i class="fa fa-check" aria-hidden="true"></i>
+							td <i class="fa fa-check" aria-hidden="true"></i>
+							td &nbsp;
+						tr
+							td Chile
+							td &nbsp;
+							td <i class="fa fa-check" aria-hidden="true"></i>
+							td &nbsp;
+						tr
+							td.accent Colombia
+							td.accent &nbsp;
+							td.accent <i class="fa fa-check" aria-hidden="true"></i>
+							td.accent &nbsp;
+						tr
+							td Costa Rica
+							td &nbsp;
+							td <i class="fa fa-check" aria-hidden="true"></i>
+							td &nbsp;
+						tr
+							td Cuba
+							td <i class="fa fa-check" aria-hidden="true"></i>
+							td <i class="fa fa-check" aria-hidden="true"></i>
+							td <i class="fa fa-check" aria-hidden="true"></i>
+						tr
+							td Guatemala
+							td &nbsp;
+							td &nbsp;
+							td &nbsp;
+						tr
+							td México
+							td <i class="fa fa-check" aria-hidden="true"></i>
+							td <i class="fa fa-check" aria-hidden="true"></i>
+							td &nbsp;
+						tr
+							td Nicaragua
+							td &nbsp;
+							td <i class="fa fa-check" aria-hidden="true"></i>
+							td &nbsp;
+						tr
+							td Panamá
+							td &nbsp;
+							td &nbsp;
+							td &nbsp;
+						tr
+							td Perú
+							td &nbsp;
+							td &nbsp;
+							td &nbsp;
+						tr
+							td Uruguay
+							td &nbsp;
+							td &nbsp;
+							td &nbsp;
+						tr
+							td Venezuela
+							td &nbsp;
+							td &nbsp;
+							td <i class="fa fa-check" aria-hidden="true"></i>
+						tr
+							td(colspan='4') *Para el momento de la publicación del estudio AUDIT no se contaba con registros de guías de manejo sobre osteoporosis a nivel nacional, actualmente contamos con el II Consenso Colombiano para el manejo de la Osteoporosis Postmenopáusica.
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=296499&chapterid=8891', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=296499&chapterid=8893', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

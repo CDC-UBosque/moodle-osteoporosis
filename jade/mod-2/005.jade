@@ -1,0 +1,72 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 2
+				+banner-video('banner-mod-2')
+				
+				h2 Módulo 2 / 
+					span Fisiopatología de la Osteoporosis.
+					
+				h3 7. ¿Qué es la calidad ósea?
+				
+				p La calidad ósea el conjunto de factores determinantes de fragilidad ósea diferentes de la masa ósea. Más específicamente, podría decirse que calidad ósea es el conjunto de factores causantes de fragilidad ósea que no quedan recogidos en la determinación densitométrica. La calidad engloba las características estructurales del hueso, tanto a escala macroscópica (“macroarquitectura”) como microscópica (“microarquitectura”). (Gonzalez S J, Fisiopatología de la osteoporosis. Medicine 2006;9 extr 1-7)  (Ver Tabla No 3)  
+				
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla No 3. Componentes de la calidad ósea.
+					tbody
+						tr
+							td Aspectos estructurales
+							td Aspectos macroestructurales: tamaño, momento de inercia.
+							td Aspectos microestructurales: microarquitectura (conexión trabecular, concentradores de tensión)
+							td Calidad del tejido óseo
+							td Mineralización
+							td Microdaño
+							td Colágeno
+							td Viabilidad de los osteocitos
+							td Cristalinidad
+							
+				h3 8. ¿Por qué se produce la osteoporosis?
+				
+				p En adultos jóvenes, el hueso resorbido se repone con una cantidad igual de tejido óseo nuevo. Por tanto, la masa esquelética permanece constante después de alcanzar la masa ósea máxima en la adultez. Sin embargo, después de los 30 a 45 años de edad se desequilibran los procesos de resorción y formación de hueso y la resorción excede a la formación. Este desequilibrio puede comenzar en distintas edades y varía en diferentes puntos del esqueleto; se exagera en las mujeres después de la menopausia. La pérdida ósea excesiva puede ser resultado del aumento en la actividad osteoclástica, del descenso en la actividad osteoblástica, o ambas a la vez. Además, el aumento en la frecuencia de activación de la remodelación y, por tanto, del número de sitios en remodelación, puede magnificar el pequeño desequilibrio que se observa en cada unidad de remodelación. El aumento en el reclutamiento de los sitios para remodelación ósea produce una disminución reversible en el tejido óseo, pero también puede causar la pérdida permanente de tejido con rompimiento de la arquitectura esquelética. 
+				p En el hueso trabecular, si los osteoclastos penetran las trabéculas, no dejan un molde para la formación de hueso nuevo; por consiguiente, sobreviene la pérdida ósea rápida y se afecta la conectividad del hueso esponjoso. Un mayor número de sitios en remodelación aumenta la probabilidad de este fenómeno. En el hueso cortical, el aumento de la activación para remodelación crea hueso más poroso. El efecto de este aumento en la porosidad en la fuerza del hueso cortical puede ser modesto si no se modifica el diámetro total del hueso. Sin embargo, el descenso en la aposición de hueso nuevo en la superficie perióstica, aunado al aumento en la resorción endocortical del hueso, disminuye la fortaleza biomecánica de los huesos largos. Incluso una exageración pequeña en la pérdida ósea normal aumenta el riesgo de fracturas relacionadas con osteoporosis, debido a los cambios arquitectónicos que se producen. (Baron R, Kneissel M. WNT signaling in bone homeostasis and disease: from human mutations to treatments.Nature Medicine. 2013;19:179-192. Rivadeneira F, Mäkitie O. Osteoporosis and Bone Mass Disorders: From Gene Pathways to Treatments. Trends in endocrinology and metabolism. 2016;27(5): 262-281. Gonzalez S J, Fisiopatología de la osteoporosis. Medicine 2006;9 extr 1-7)
+				
+				h3 9. Para recordar
+				
+				//- texto resaltado
+				div
+					div.span10.resaltado-txt
+						p La osteoporosis una enfermedad caracterizada por la pérdida de la resistencia del hueso (que depende a su vez de la mineralización de la matriz orgánica, grado de recambio óseo, geometría ósea, conservación de tejido trabecular y conectivo, recambio bioquímico y grosor de la cortical), lo que conlleva a fragilidad ósea y aumento del riesgo de fractura.
+						p El hueso tiene cuatro funciones vitales como proporcionar soporte rígido para extremidades y cavidades corporales que contienen órganos vitales, permitir la locomoción, ser reserva de iones y grasa y alojar la médula ósea.
+						p Varios factores intervienen en el desarrollo de la osteoporosis, como el no lograr una acreción adecuada de masa ósea, deterioro de la microarquitectura ósea por acción hormonal o de sustancias que deterioran la misma, alteración de la calidad del hueso, todo esto sumado llevan a un mayor riesgo de fracturas. 
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=296899&chapterid=8904', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=296899&chapterid=8906', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

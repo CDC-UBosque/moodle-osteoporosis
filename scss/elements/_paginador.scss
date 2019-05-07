@@ -1,0 +1,30 @@
+// -----------------------
+// material modulo
+// -----------------------
+
+.curso-cc,
+#region-main .box.generalbox .curso-cc{
+	
+	.pager{
+		
+		li{
+			
+			&:first-child{
+				margin-right: .5rem;
+			}
+			
+			a{
+				background: $color_white;
+				color: $color_brand_blue;
+				
+				&:hover{
+					text-decoration: underline;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

@@ -1,0 +1,62 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 1
+				+banner-video('banner-mod-1')
+				
+				h2 Módulo 1 / 
+					span Carga de la Enfermedad para el Sistema de Salud
+					
+				h3 9. Bibliografía.
+				
+				ol
+					li A report prepared in collaboration with the International Osteoporosis Foundation (IOF). 2018..     
+					li Thomas J, Doherty SM. HIV infection--a ris factor for osteoporosis. J Acquir Immune Defic Syndr. 2003 Jul 1;33(3):281-91
+					li Kanis JA, Johnell O, De Laet C, et al. Bone. 2004;35(2):375-82.   
+					li Lindsay R, Silverman SL, Cooper C, et al. JAMA. 2001;285(3):320-3 .   
+					li A report prepared in collaboration with the International Osteoporosis Foundation (IOF). 2018.
+					li Cooper C. The crippling consequences of fractures and their impact on quality of life. Am J Med. 1997;103(2A):12S-17S; discussion 17S-19S.
+					li DANE. (2008). Conciliación censal 1985-2005. Proyecciones de población 2006-2020. Retrieved // 
+						a(href='http://www.dane.gov.co' target='_blank') www.dane.gov.co
+					li THE LATIN AMERICA REGIONAL AUDIT. Epidemiology, costs and burden of osteporosis in 2012. International osteoporosis foundation. 
+						a(href='http://www.iofbonehealth.org' target='_blank') www.iofbonehealth.org
+					li J. García, et al. Acta Médica Colombiana Vol. 39  n°1 ,  enero - marzo  2014.  Costos de fracturas en mujeres con osteoporosis en Colombia.
+					li Clark P, Cons-Molina F, Deleze M, et al.The prevalence of radiographic vertebral fractures in Latin American countries: the Latin American Vertebral Osteoporosis Study. (LAVOS).Osteoporos Int. 2009;20(2):275-82.
+					li McLellan AR, Reid DM, Forbes K et al. Effectiveness of strategies for the secondary prevention of osteoporotic fractures in Scotland. (CEPS 99/03). NHS Quality Improvement Scotland, 2004.
+					li González LA, et al. REVISTA COLOMBIANA DE REUMATOLOGÍA VOL. 16 No. 1, Marzo 2009, pp. 61-75  
+					li Bliuc D, Nguyen ND, Milch VE, et al. Mortality risk associated with low-trauma osteoporotic fracture and subsequent fracture in men and women.JAMA. 2009;301(5):513-
+					li II Consenso Colombiano para el manejo de la Osteoporosis Postmenopáusica.
+					li Ström O et al. Arch Osteoporos 2011; 6: 59–155.
+					li Dempster DW. Am J Manag Care 2011; 17:S164–S169.
+					li R. Aziziyeh et al , JOURNAL OF MEDICAL ECONOMICS 2019. The burden of osteoporosis in four Latin American countries: Brazil, Mexico, Colombia, and Argentina. JOURNAL OF MEDICAL ECONOMICS. R. AZIZIYEH ET AL. 
+						a(href='https://doi.org/10.1080/13696998.2019.1590843' target='_blank') https://doi.org/10.1080/13696998.2019.1590843.
+					li J. J. Jaller-Raad • J. J. Jaller-Char et al. Incidence of Hip Fracture in Barranquilla, Colombia, and the Development of a Colombian FRAX Model. Springer, 8 March 2013.
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=296499&chapterid=8893', 'back', 'Anterior', '#', 'disabled', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
