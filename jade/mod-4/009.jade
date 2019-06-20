@@ -1,0 +1,52 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-4')
+				
+				+titulos-modulo('Módulo 4 / ', 'Estrategias óptimas de tratamiento de la osteoporosis postmenopáusica')
+								
+				h3 14. Bibliografía
+				
+				ol
+					li Adler RA, Fuleihan GE, Bauer D, Camacho P, Clarke BL, Clines GA (2016). Managing osteoporosis patients after longterm bisphosphonate treatment: report of task Force of The American Society for Bone and Mineral Research. JBMR (1) 16-35.
+					li Bolland MJ, Avenell A, Baron JA, et al. (2010). Effect of calcium supplements on risk of myocardial infarction and cardiovascular events: meta-analysis. BMJ;341(29):c3691.
+					li Camacho P, Petak SM, Binkley N, Clarke BL, Harris ST, Hurley DL, et al. (2016). American association of clinical endocrinologists and american college of endocrinology clinical practice guidelines for the diagnosis and treatment of postmenopausal osteoporosis. Endocrine Practice Vol 22, suppl 4.
+					li Cosman F, Beur SJ, LeBoff MS, Lewiecki EM, Tanner B., Randall S., Lindsay S (2014). Clinician‘s guide to prevention and treatment of osteoporosis, Osteoporosis Int.
+					li Dawson-Hughes B, Mithal A, Bonjour J. (2010). IOF position statement: Vitamin D recommendations for older adults. Osteoporos Int 21:1151-4.
+					li Holick M (2007). Vitamin D deficiency.  N Engl  J Med; 357: 266-81
+					li Rachner TD, Khosla  S,  Hofbauer  LC (2011). Osteoporosis: now and the future. Lancet; 377: 1276-87.
+					li Watts NB, Dima LD (2010). Long-term use for bisphosphonates in osteoporosis. J Clin Endocrinol Metab; 95: 1555-65.
+					li Wang L, Manson JE, Sesso HD (2012). Calcium intake and risk of cardiovascular disease: a review of prospective studies and randomized clinical trials. Am J Cardiovasc Drugs;12(2):105–116.
+					li Watts NB., Manson JE (2017). Osteoporosis and fracture risk evaluation and management, Shared decision making in clinical practice. JAMA.;317(3):253-254. 
+					li Weaver CM, Alexander DD, Boushey J, Hughes D, Lappe M,.LeBoff MS, et al. (2016). Calcium plus vitamin D supplementation and risk of fractures: an updated meta-analysis from the National Osteoporosis Foundation. Osteoporos Int 27:367–376.
+					li Zaheer  S S LeBoff  M and Lewiecki M (2015). Denosumab for the treatment of osteoporosis Expert Opin. Drug Metab. Toxicol 11(3):461-470.
+				
+				//- Material modulo
+				+material-modulo('material-mod-4')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=299998&chapterid=8940', 'back', 'Anterior', '#', 'disabled', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,123 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-4')
+				
+				+titulos-modulo('Módulo 4 / ', 'Estrategias óptimas de tratamiento de la osteoporosis postmenopáusica')
+					
+				h3 5. ¿Cuáles recomendaciones se deben tener en cuenta en el tratamiento farmacológico?
+				
+				p Las recomendaciones de las personas que deberían recibir tratamiento varían y dependen de muchos factores, la National Osteoporosis Foundation (NOF) considera que deben tratarse mujeres postmenopáusicas y hombres mayores de 50 años que se presentan con las siguientes condiciones:
+				
+				ul
+					li Fractura de cadera o vertebral (clínica, radiográfica, o en morfometría ósea vertebral o asintomática).
+					li T-score: ≤-2,5 en cuello femoral, cadera total o columna lumbar por DXA 
+					li Baja masa ósea u osteopenia (T-score entre: -1,0 y -2,5 en cuello femoral, cadera total o columna lumbar por DXA) y una probabilidad de fractura de cadera ≥ 3% o fractura mayor relacionada a osteoporosis del ≥ 20%  calculada por la  herramienta FRAX. 
+					
+				h3 6. ¿Qué otro tratamiento se requiere?
+				
+				p Para el manejo de la osteoporosis se requiere el siguiente tratamiento concomitante:
+				
+				h4 Suplementos de calcio
+
+				p Los suplementos   de   calcio deben   darse cuando la dieta no aporte las cantidades suficientes   diarias   recomendadas (una   dieta postmenopáusica promedio aporta 600-700 mg/día); la recomendación del Institute of Medicine (IOM) es 1000 mg/día para hombres entre 50-70 años, mujeres de 51 años o mayores y hombres de 71 años o mayores, 1200 mg/día. No hay evidencia que dosis mayores de calcio confieren alguna acción en el hueso.
+				p Dosis de 1,200-1,500 mg/día pueden tener beneficios limitados y por el contrario pueden incrementar el riesgo de cálculos renales y de enfermedad cardiovascular y stroke (Bolland MJ et al. 2010). Los suplementos se absorben cuando se toman en dosis divididas (menos de 500 mg de calcio elemental por toma).  Tanto el carbonato de calcio como el citrato, ofrecen un alto contenido por tableta (40% y 30% de calcio elemental, respectivamente) (Camacho P, et al 2016)
+				p Estudios clínicos han demostrado un efecto positivo de los suplementos de calcio sobre la preservación de la masa ósea en ancianos, por un efecto anti-resortivo. Este efecto no se ha encontrado en mujeres en la etapa posmenopáusica temprana, por lo que no se recomienda como terapia única.  Su eficacia anti fractura solo se presenta en pacientes con una adherencia mayor al 80%. 
+				p En un meta-análisis realizado por la NOF se ha mostrado que la terapia con suplementos de calcio asociados a vitamina D, pueden reducir el riesgo de fracturas totales en el 15%, riesgo relativo estimado 0.85 con 95% intervalo de confianza y una reducción del 30% de fractura de cadera (0.70, 95% IC) (Weaver CM., et al 2016)
+				p Los suplementos de calcio pueden causar dispepsia, flatulencia, diarrea o constipación y pueden aumentar el riesgo de litiasis de vías urinarias en pacientes susceptibles.  En estos casos, conviene administrarlos junto con los alimentos, mantener un aporte abundante de líquidos y vigilar la calciuria.  
+				p En el 2010 se publicó un meta-análsis por Bolland de 11 estudios en el cual más de 11000 mujeres tomando alrededor de 1000 mg de calcio diarios tuvieron un aumento del 27% en el riesgo de infarto de miocardio. (Bolland MJ., et al 2010).  En otra revisión realizada por Wang y cols. que incluyo 17 estudios prospectivos aleatorizados no encontró dicho riesgo (Wang L., et al 2012), mientras que en el Nurses’ Health Study un estudio de cohorte de 24 años, no encontraron dicha asociación en 74.245 mujeres y detectaron que las mujeres que usaban suplementos de calcio tenían menor incidencia de enfermedad isquémica cardiaca.
+				p Los estudios controlados randomizados de calcio y vitamina D como monoterapia sobre efectos cardiovasculares son altamente controvertidos porque no han sido adecuadamente investigados y por lo tanto se requieren de ensayos diseñados para medir estos efectos y poder sacar una conclusión definitiva.
+				
+				h4 Vitamina D
+				
+				p La vitamina D tiene un papel importante en la absorción intestinal de calcio, la salud ósea, y muscular, el equilibrio y el riesgo de caídas. Su principal efecto biológico consiste en mantener los niveles de calcio sérico dentro de los límites normales, puesto que aumenta la eficacia con que el intestino absorbe el calcio ingerido.  La interacción de la vitamina D con su receptor incrementa la absorción del calcio en un 30%-40% y del fósforo en un 80%, también corrige el hiperparatiroidismo secundario y la osteomalacia, evitando por consiguiente la pérdida ósea (Holick M., 2007)
+				p Para alcanzar buenos niveles de vitamina D, la exposición solar debe ser entre 15 y 20 minutos, y fuera de los horarios pico, en manos, cara, brazos o piernas. En invierno, la exposición debe aumentarse, recordar que las pantallas y los protectores solares disminuyen o bloquean la síntesis de vitamina D.
+				p La medición de los niveles séricos de vitamina D es el mejor indicador de suficiencia de la misma. El nivel óptimo es controvertido, recomendándose mantener los niveles por encima a 30 ng/ml (75 nmol/L) de 25 hidroxi-vitamina D (AACE y Endocrine Society) (Camacho P., et al, 2016) (Dawson-Hughes B, 2010) (ver tabla No 3).
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla No 3. Definición de niveles de vitamina D
+					thead
+						tr
+							th Estado de vitamina D
+							th Valores de referencia
+					tbody
+						tr
+							td Normal
+							td 30-60 ng/ml
+						tr
+							td Insuficiente
+							td entre 20 y 29 ng/ml
+						tr
+							td Deficiente
+							td entre 10 y 19 ng/ml
+						tr
+							td Deficiente severo
+							td por debajo de 10 ng/ml
+							
+				p La Endocrine Society publicó en 2011 sus Guías de Práctica Clínica sobre Evaluación, Tratamiento y Prevención del Déficit de Vitamina D al igual que el Institute of Medicine (IOM). Existen discrepancias con respecto a los niveles séricos óptimos de 25OHD y a las dosis convenientes de la vitamina. 
+				p El IOM no está de acuerdo con el concepto de que un nivel sérico de 25OHD de 30 ng/ml sea más beneficioso para la salud que uno de 20 ng/ml, y menciona que considerar "en riesgo" a los grupos enumerados por la Endocrine Society ocasionaría estudiar a un número muy amplio de personas con costos económicos considerables para la salud pública. Por su parte, los expertos de la Endocrine Society consideran que las opiniones del IOM son incorrectas, y además dirigidas solo a políticas sanitarias y de fortificación de alimentos, pero no aplicables para la atención de pacientes.
+				p La Endocrine Society publicó en 2011 que no hay evidencia que justifique un tamizaje masivo de la población buscando el déficit de vitamina D y que debería investigarse en los grupos de riesgo:
+				
+				ul
+					li Osteoporosis 
+					li Síndromes de malabsorción: enfermedad celíaca, enfermedad inflamatoria intestinal, enfermedad de Crohn, cirugía bariátrica, enteritis posradiación
+					li Enfermedad renal crónica
+					li Insuficiencia hepática 
+					li Hiperparatiroidismo 
+					li Fármacos: anticonvulsivantes, glucocorticoides, ketoconazol, colestiramina, algunos tratamientos del SIDA
+					li Adultos mayores con historia personal de caídas o de fracturas no traumáticas 
+					li Obesidad (definida por IMC > 30 kg/m2) 
+					li Enfermedades granulomatosas, linfomas 
+					li Enfermedades neurológicas crónicas: parkinson, esclerosis múltiple, etc.  
+					li Cáncer 
+					li Trasplantados 
+					
+				//- texto resaltado
+				div
+					div.span10.resaltado-txt
+						p La NOF recomienda una ingesta de 800 a 1000 UI de vitamina D por día en adultos de 50 años o mayores. 
+						
+						
+				p El Institute Medicine Dietary Reference Intake recomienda para la vitamina D 600 UI/día para menores de 70 años y 800 UI/día para adultos mayores de 71 años. El límite superior seguro de vitamina D es hasta 10,000 UI/día. 
+				p Cuando se realiza la suplementación en pacientes con OP se debe monitorear a los tres meses para valorar el nivel alcanzado y mantenerlo en los pacientes con osteoporosis.
+				p Cuando se administran suplementos en forma diaria la vitamina D2 y la D3 tienen la misma potencia equivalente. Si la administración es intermitente (mensual, bimestral o trimestral) como la Vitamina D3 tiene mayor vida media que la D2, se recomienda su elección.
+				p Deberían considerarse dos etapas en el tratamiento con vitamina D para un sujeto cuya concentración sérica de 25OHD es inferior a 30 ng/ml: – Una fase de corrección del déficit (carga), que durante un tiempo utiliza dosis altas de vitamina D. Una etapa de mantenimiento, donde las dosis administradas tienen como objetivo mantener la concentración sérica de 25OHD en el rango deseable.
+				p Las dosis para corregir el déficit (carga) serán 2.000- 5.000 UI/día, 50.000 UI/semana, o 100.000 UI cada 15-30 días, hasta alcanzar niveles adecuados, lo que generalmente ocurre en un lapso cercano a 2-3 meses. Para mantener un nivel sérico de 25OHD superior a 30 ng/ml se puede administrar una dosis diaria (800-2.000 UI/día). Recordar que los pacientes obesos o con malabsorción o con medicaciones que alteran la vitamina D pueden requerir dosis más elevadas, por lo general, el doble.
+				
+				h4 Otros suplementos y nutrientes:
+				
+				p No existen estudios aleatorizados controlados que hayan evaluado el efecto del magnesio con el riesgo de fractura, por lo tanto, los individuos con hipomagnesemia pueden beneficiarse con su suplementación, pero esta no incrementa la DMO. 
+				p Los pacientes pueden ser advertidos de disminuir la ingesta de cafeína, y se aconseja una adecuada ingesta de proteínas, 0.8 gr/kg, la cual minimiza la pérdida ósea en pacientes que han sufrido fracturas, 
+				p Los protectores de cadera no reducen el riesgo de caídas, pero deberían reducir el riesgo de fracturas.
+
+				
+				//- Material modulo
+				+material-modulo('material-mod-4')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=299998&chapterid=8935', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=299998&chapterid=8937', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

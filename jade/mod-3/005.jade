@@ -1,0 +1,162 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-3')
+				
+				+titulo-modulo-3
+					
+				h3 6. ¿Cuáles son los paraclínicos básicos en osteoporosis?
+				
+				p Las pruebas de laboratorio comúnmente incluidas en una evaluación de un diagnóstico diferencial de osteoporosis se clasifican en dos grupos:
+				
+				//- Acordion
+				div.accordion#accordion2
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseOne')
+								span 1. Los exámenes de primer nivel incluyen:
+						div#collapseOne.accordion-body.collapse.in
+							div.accordion-inner
+								ul
+									li Recuento de células sanguíneas.
+									li Velocidad de sedimentación globular.
+									li Calcio sérico (corregido para la albúmina).
+									li Fosfato sérico.
+									li Electroforesis de proteínas séricas.
+									li Creatinina sérica.
+									li Fosfatasa alcalina.
+									li Calcio urinario (en orina de 24 h).
+									
+								p En mujeres posmenopáusicas asintomáticas con osteoporosis, se ha demostrado que esta primera detección detecta más del 90% de las causas secundarias de pérdida ósea. 
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseTwo')
+								span 2. Los exámenes de segundo nivel incluyen:
+						div#collapseTwo.accordion-body.collapse
+							div.accordion-inner
+								ul
+									li 25-hidroxi-vitamina D.
+									li Hormona estimulante de la tiroides (TSH).
+									li Hormona paratiroidea (PTH).
+									li Calcio ionizado.
+									li Anticuerpos anti-tejido transglutaminasa.
+									li Cortisol libre en orina, supresión de cortisol sérico después de 1 mg de dexametasona. 
+									li Testosterona sérica y SHBG (en hombres).
+									li Cadenas ligeras libres.
+									li Cadenas ligeras kappa y lambda libres.
+									li Aspiración y biopsia de médula ósea.
+				
+				
+				p El examen de segundo nivel incluye análisis / exámenes que pueden realizarse en pacientes con sospecha extremadamente alta de causas secundarias de osteoporosis. (ver tabla No 1).
+				
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla No 1. Test bioquimico y diagnostico asociado ( flecha arriba=incrementa; flecha abajo=disminuye)
+					thead
+						tr
+							th Parametro
+							th Condicion Asociada
+					tbody
+						tr
+							td Cuadro Hematico
+							td Enfermedades inflamatorias y malignas
+						tr
+							td Electroforesis de proteínas
+							td Mieloma Múltiple
+						tr
+							td Velocidad de sedimentacion globular
+							td &uarr; Diagnostico diferencial de inflamación
+						tr
+							td(rowspan="3") Calcio sérico
+							td &uarr; Hiperparatiroidismo primario
+						tr
+							td &uarr; Mieloma multiple
+						tr
+							td &darr; Hipoparatiriodismo secundario, malabsorcion
+						tr
+							td(rowspan="3") Fosforo serico
+							td &uarr; Insuficiencia renal grado IV
+						tr
+							td &uarr; Hiperpatiriodismo secundario renal
+						tr
+							td &darr; Malabsorcion
+						tr
+							td Fosfatasa alcalina
+							td &uarr; Osteomalacia, enfermedad de Paget
+						tr
+							td PTH sérica
+							td &uarr; Hiperparatiroidismo
+						tr
+							td Creatinina
+							td &darr; Osteodistrofia renal
+						tr
+							td(rowspan="2") 25 OH vitamina D
+							td &uarr; Intoxicacion por vitamina D
+						tr
+							td &darr; Deficit de Vitamina D, osteomalacis
+						tr
+							td(rowspan="2") Calcio Urinario de 24 horas
+							td &darr; Malabsorcion intestinal
+						tr
+							td &uarr; Calculos renales
+						tr
+							td TSH
+							td ≤ 0.3 factor de riesgo
+						tr
+							td Testosterona (hombres)
+							td Hipogonadismo
+						tr
+							td Ac anti transaglutaminasa tisular
+							td Enfermedad Celiaca
+						tr
+							td Cortisol libre urinario
+							td &uarr; Hipersecrecion Adrenal
+						tr
+							td Triptasa serica o Metilhistamina urinaria
+							td &uarr; Mastocitosis
+						tr
+							td Aspiracion de medula ósea
+							td Falla renal, osteomalacia resistente a Vit D, mastocitosis
+							
+				p Los marcadores de recambio óseo (BTM por sus siglas en ingles) se utilizan para cuantificar la remodelación ósea (reabsorción / nuevo ciclo de formación). Los aumentos en los marcadores de reabsorción se asocian con un mayor riesgo de fractura independiente de la DMO y pueden servir para controlar la respuesta antiosteoporótica a las terapias en los ensayos clínicos y en la práctica clínica diaria. (Szulc P ET AL, 2008)
+				p Los marcadores de formación ósea se miden preferentemente en el suero, mientras que los marcadores de resorción ósea se miden tanto en suero como en orina (Ur). Incluyen:
+				
+				ul
+					li Marcadores de formación ósea (fosfatasa alcalina ósea, osteocalcina, propéptidos de procolágeno tipo I (P1NP))
+					li Marcadores de la resorción ósea (CTX, NTX,  piridinolina urinaria, desoxipiridinolina urinario, CTX urianrio).
+					
+				p Entre estos marcadores, el P1NP (un marcador de formación ósea) y el CTX sérico (un marcador de resorción ósea) son los más confiables, tanto en la evaluación inicial como en el seguimiento.
+				p Aunque se ha demostrado que los niveles elevados de BTM predicen tasas rápidas de pérdida ósea en mujeres ancianas, estas pruebas de laboratorio no se pueden usar para diagnosticar osteoporosis y / o en la rutina clínica. No obstante, los BTM han demostrado ser útiles para medir la respuesta al tratamiento farmacológico y mejorar el cumplimiento del tratamiento del paciente .
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-3')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=299791&chapterid=8919', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=299791&chapterid=8921', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

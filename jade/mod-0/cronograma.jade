@@ -1,0 +1,153 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//-banner modulo 1
+				+banner-imagen
+				
+				h2 Módulo 0 / 
+					span Cronograma
+					
+				h3 Cronograma
+				
+				//- Table
+				table.table.table-striped
+					thead
+						tr
+							th Módulos
+							th Actividades
+							th Inicio
+							th Cierre
+					tbody
+						tr
+							td Módulo 0
+							td(colspan='3') 22 de Julio - 28 de Julio
+							
+						//- Inicio modulo	
+						tr
+							td(rowspan='4') Módulo 1
+							td(colspan='3') 29 de Julio - 12 de Agosto
+						tr
+							td Video conferencia
+							td(colspan='2') 8 de Agosto 7 a 9 p.m.
+						tr
+							td Caso Clínico
+							td(colspan='2') 29 de Julio
+						tr
+							td Evaluación
+							td(colspan='2') 9 de Agosto
+							
+						//- Inicio modulo	
+						tr
+							td(rowspan='4') Módulo 2
+							td(colspan='3') 12 de Agosto - 26 de Agosto
+						tr
+							td Video conferencia
+							td(colspan='2') 22 de Agosto 7 a 9 pm
+						tr
+							td Caso Clínico
+							td(colspan='2') 12 de Julio
+						tr
+							td Evaluación
+							td(colspan='2') 23 de Agosto
+							
+						//- Inicio modulo	
+						tr
+							td(rowspan='4') Módulo 3
+							td(colspan='3') 26 de Agosto - 9 de Septiembre
+						tr
+							td Video conferencia
+							td(colspan='2') 5 de Septiembre 7 a 9 p.m.
+						tr
+							td Caso Clínico
+							td(colspan='2') 26 de Agosto
+						tr
+							td Evaluación
+							td(colspan='2') 6 de Septiembre
+							
+						//- Inicio modulo	
+						tr
+							td(rowspan='4') Módulo 4
+							td(colspan='3') 9 de Septiembre - 23 de Septiembre
+						tr
+							td Video conferencia
+							td(colspan='2') 19 de Septiembre 7 a 9 p.m.
+						tr
+							td Caso Clínico
+							td(colspan='2') 9 de Septiembre
+						tr
+							td Evaluación
+							td(colspan='2') 20 de Septiembre
+							
+						//- Inicio modulo	
+						tr
+							td(rowspan='4') Módulo 5
+							td(colspan='3') 23 de Septiembre - 7 de Octubre
+						tr
+							td Video conferencia
+							td(colspan='2') 3 de Octubre 7 a 9 p.m.
+						tr
+							td Caso Clínico
+							td(colspan='2') 23 de Septiembre
+						tr
+							td Evaluación
+							td(colspan='2') 4 de Octubre
+							
+						//- Inicio modulo	
+						tr
+							td(rowspan='4') Módulo 6
+							td(colspan='3') 7 de Octubre - 21 de Octubre
+						tr
+							td Video conferencia
+							td(colspan='2') 17 de Octubre 7 a 9 p.m.
+						tr
+							td Caso Clínico
+							td(colspan='2') 7 de Octubre
+						tr
+							td Evaluación
+							td(colspan='2') 18 de Octubre
+							
+						//- Inicio modulo	
+						tr
+							td(rowspan='4') Módulo 7
+							td(colspan='3') 21 de Octubre - 4 de Noviembre
+						tr
+							td Video conferencia
+							td(colspan='2') 30 de Octubre 7 a 9 p.m.
+						tr
+							td Caso Clínico
+							td(colspan='2') 21 de Octubre
+						tr
+							td Evaluación
+							td(colspan='2') 31 de Octubre
+							
+						//- Inicio modulo	
+						tr
+							td(rowspan='4') Exámen final
+							td(colspan='3') 1 al 15 de Noviembre
+							
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('#', 'disabled', 'Anterior', '#', 'disabled', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

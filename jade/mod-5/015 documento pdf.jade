@@ -1,0 +1,45 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-5')
+				
+				+titulos-modulo('Módulo 5 / ', 'Tratamiento farmacológico combinado, secuencial y Adherencia terapéutica')
+					
+				h3 Postmenopausal osteoporosis: Assesment and management
+				
+				div.banner-video.wow.fadeInUp
+					div.span12
+						div#video
+							div.embed-container
+								iframe(src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/osteoporosis-amgen/pdf/mod5/Postmenopausal-osteoporosis-Assessment-and-treatment-rizolli.pdf" frameborder="0" allowfullscreen)
+
+
+	//- Material modulo
+	+material-modulo('material-mod-5')
+							
+	//- footer section
+	+footer-interno
+	
+	//- progrso y contador
+	+menu-simple
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

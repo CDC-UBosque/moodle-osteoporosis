@@ -1,0 +1,51 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-5')
+				
+				+titulos-modulo('Módulo 5 / ', 'Tratamiento farmacológico combinado, secuencial y Adherencia terapéutica')
+					
+				h3 9. Para recordar
+				
+				ul
+					li La terapia combinada Denosumab/Teriparatida ha demostrado aumento en DMO de columna lumbar, cadera total y cuello femoral, sin embargo, se necesita mayor evidencia en reducción de riesgo de fractura, costo efectividad y seguridad. 
+					li La terapia secuencial iniciando un agente osteoformador seguido de una terapia antiresortiva es el uso óptimo de la terapia actual para osteoporosis, pues genera beneficios a largo plazo en reducción de riesgo de fractura.
+					li Es importante recordar que la falta adherencia a los medicamentos para osteoporosis es similar a la presentada para otras enfermedades crónicas y entre los factores para no adherencia están : falta de información acerca de la enfermedad, inadecuada interacción entre profesionales de salud y el paciente, la naturaleza asintomática de la enfermedad, necesidad de tratamiento crónico, efectos adversos asociados a los medicamentos, requisitos para la toma del medicamento (en el caso de los bifosfonatos), creencias y temores personales, adultas mayores con comorbilidad importante, polifarmacia, discapacidad, deterioro cognitivo y depresión.
+					li La adherencia bifosfonatos orales revelan que aproximadamente una tercera parte de las personas prescritas con esta terapia no tienen adherencia o es muy baja, indicando, además, que la adherencia es menor a las formulaciones genéricas de alendronato, la cual no mejora el segundo año de tratamiento (auto reporte adherencia a bifosfonatos de 30 al 40 %).
+					li Estudios realizados en vida real han demostrado alta adherencia (82.7–89.3%) y persistencia (87.0–95.3%) en pacientes que reciben terapia con denosumab.
+					li La ausencia de adherencia a la terapia farmacológica se ha asociado a menor densidad mineral ósea, menor supresión de los marcadores óseos, incremento en la frecuencia de fracturas y más costos al sistema de salud. Los pacientes adherentes generan menos costos médicos al usar menos los servicios médicos, los cuidados ambulatorios y los cuidados hospitalarios.
+					li Las estrategias para favorecer la adherencia farmacológica son basadas en el paciente, los medicamentos y los Servicios de enlace de fracturas.
+					li La comunicación del riesgo en el tratamiento de osteoporosis es un proceso es activo y reciproco, de información individual a los pacientes de forma clara y fácil de entender. 
+					li La monitoria del tratamiento va dirigida a identificar a aquellos que tienen una pérdida ósea significativa y su frecuencia es individualizada dependiendo del estado clínico del paciente y el riesgo de fractura. 
+
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-5')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=300080&chapterid=8959', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=300080&chapterid=8961', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

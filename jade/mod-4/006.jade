@@ -1,0 +1,108 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-4')
+				
+				+titulos-modulo('Módulo 4 / ', 'Estrategias óptimas de tratamiento de la osteoporosis postmenopáusica')
+					
+				h3 8. ¿Cómo elegir el tratamiento?
+				
+				p La decisión del tratamiento para la osteoporosis debe ser individualizado, teniendo en cuenta la condición clínica del paciente y la meta deseada en la reducción de fracturas; en la tabla No 5 se relaciona la comparación del efecto de los diferentes medicamentos en la reducción de fracturas vertebrales, no vertebrales y de cadera. 
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla No 5. Comparación del efecto del tratamiento actual de la osteoporosis en fracturas vertebrales, no vertebrales y de cadera.
+					thead
+						tr
+							th(rowspan="2") MEDICAMENTO
+							th(colspan="3") REDUCCION DE FRACTURA %
+						tr
+							th VERTEBRAL
+							th CADERA
+							th NO VERTEBRAL
+					tbody
+						tr
+							td Estrógenos/TH
+							td 33
+							td 27
+							td -
+						tr
+							td Raloxifeno
+							td 50
+							td -
+							td 47*
+						tr
+							td Alendronato
+							td 47
+							td 50
+							td 48
+						tr
+							td Risedronato
+							td 41
+							td 40 - 60
+							td 27
+						tr
+							td Ibandronato
+							td 50
+							td -
+							td 69**
+						tr
+							td Ácido zoledrónico
+							td 70
+							td 41
+							td 25
+						tr
+							td Denosumab
+							td 68
+							td 40
+							td 20
+						tr
+							td PTH 1-34
+							td 65
+							td 
+							td 53
+						tr
+							td(colspan="4")  (*) En pacientes con fracturas vertebrales severas prevalentes, estudio MORE
+								br/ (**) En pacientes con T-score en cuello femoral &lt;-3.0, estudio BONE
+								
+				h3 9. ¿Pueden combinarse estos medicamentos?
+				
+				h4 Combinación de agentes terapéuticos y terapia secuencial
+				p No hay estudios que muestren que la combinación de 2 o más medicamentos para el tratamiento de la OP tenga mayor efecto para la reducción de fractura que con un solo agente.
+				p La combinación de estrógenos con bisfosfonatos, ha demostrado notables incrementos de la densidad mineral ósea.  Similares hallazgos se han observado con la combinación de raloxifeno   con   bisfosfonatos, y de PTH con zoledronato y denosumab.  Dichas combinaciones aumentan el costo del tratamiento, e incrementan el potencial riesgo de eventos adversos.
+				p Para casos severos de OP, la terapia secuencial con anabólicos seguida de un antiresortivo es preferida a la terapia combinada.
+				
+				h3 10. ¿Cuál debe ser la duración del tratamiento?
+				p La terapia no farmacológica puede ser considerada en forma indefinida. No hay evidencia extensa sobre decisiones de duración del tratamiento farmacológico. Después del tratamiento inicial debe medirse el riesgo de fractura a 3-5 años. Esto incluye, historia clínica, historia de fractura intercurrente y nuevas enfermedades concomitantes y uso de medicaciones, medición de altura, densitometría ósea e imágenes de columna. Se considera razonable suspender el tratamiento en aquellos pacientes que tengan bajo a moderado riesgo de fractura. En aquellos pacientes con alto riesgo de fractura, se continuará con el tratamiento o se buscará un tratamiento alternativo.
+				p La definición de no respondedor a la terapia es compleja. El fracaso al tratamiento se puede definir por una disminución significativa de la DMO o fracturas recurrentes (Cosman F., et al 2014) (Bolland MJ., et al 2010) (Wang L., et al 2012).          
+
+				
+				//- Material modulo
+				+material-modulo('material-mod-4')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=299998&chapterid=8937', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=299998&chapterid=8939', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

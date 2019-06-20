@@ -1,0 +1,70 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-5')
+				
+				+titulos-modulo('Módulo 5 / ', 'Tratamiento farmacológico combinado, secuencial y Adherencia terapéutica')
+					
+				h3 3. ¿Por qué es importante la adherencia farmacológica en la disminución del riesgo de fracturas?
+				
+				p Las fracturas relacionadas con osteoporosis se asocian con gran morbilidad, mortalidad y costos para el sistema sanitario, sin embargo, el tratamiento de la enfermedad tiene limitaciones para su seguimiento, lo que impone un reto terapéutico. Una de estas barreras es la falta de adherencia a las terapias. De acuerdo con la a la Organización Mundial de la Salud (OMS), en los países desarrollados, las tasas de adherencia a los tratamientos en enfermedades crónicas son aproximadamente del 50 % y esta frecuencia es menor en países en vías de desarrollo como el nuestro (Dilla, T., Valladares, A., Lizán, L., & Sacristán, J. A., 2009).
+				
+				h4 Factores para adherencia y persistencia en la terapia de osteoporosis
+				
+				p El termino adherencia se define como :“el grado en el que la conducta de un paciente , en relación con la toma de medicación , el seguimiento de una dieta o la modificación de hábitos de vida , se corresponden con las recomendaciones acordadas con el profesional sanitario” (Dilla T, et al 2009),  , durante mucho tiempo adherencia se ha asociado con el termino cumplimiento , que tiene un carácter de obligatoriedad y unidireccional ( el medico indica y el paciente acata) por lo tanto, se han propuesto otros términos como  cumplimiento terapéutico como el grado en que un paciente actúa de acuerdo con la dosis, pauta posológica, y plazos descritos. Es medida en términos de tiempo y expresada en porcentaje a través de la tasa de posesión de medicamento (MPR por sus iniciales en inglés), obtenido por el número de dosis dispensadas en relación con el periodo de tiempo. Se considera MPR>80% para definir una alta adherencia en la mayoría de los estudios de adherencia a terapias para osteoporosis (Siris, E. S., 2009).
+				p La persistencia, es el tiempo en el cual la medicación se ha administrado correctamente, desde el inicio hasta la finalización del tratamiento (Cramer, J. A., et al 2008). Es expresada en porcentaje. Para su medición se debe tener en cuenta un número de días permitidos entre los nuevos surtidos de medicamentos (“gap permitido”), las propiedades de los medicamentos y situaciones en el tratamiento (por ejemplo, bifosfonatos semanales, de uso mensual o anual, o periodos de vacaciones), (Cramer, J. A., et al 2008; Sikka, R., Xia, F., & Aubert, R. E. 2005).
+
+				p La falta adherencia a los medicamentos para osteoporosis es similar a la presentada para otras enfermedades crónicas. Existen múltiples factores que afectan la adherencia en los pacientes con osteoporosis, sin embargo, es un reto unificar los resultados de los estudios debido a las diferencias metodológicas (definiciones de adherencia y persistencia, evaluación por auto reporte o por bases de datos de farmacias), diferencias en los medicamentos (tipo, dosis y frecuencia de administración entre otras causas, al momento de jerarquizar estos factores. Podríamos decir que los factores principales que afectan la adherencia a la terapia farmacológica en osteoporosis son (Gold, D. T., & Silverman, S. 2006): 
+				
+				ul
+					li Poca información acerca de la enfermedad
+					li Inadecuada interacción entre profesionales de salud y el paciente 
+					li La naturaleza asintomática de la osteoporosis 
+					li Necesidad de tratamiento crónico 
+					li Efectos adversos asociados a los medicamentos
+					li Los requisitos para la toma del medicamento (en el caso de los bifosfonatos) 
+					li Uso de medicamentos alternativos como vitaminas o suplementos (Lindsay, B. R., et al, 2016)
+					
+				p Es importante recordar que gran parte de la persona con osteoporosis son personas adultas mayores en quienes se presentan factores como: comorbilidad que genera polifarmacia con tratamientos complejos y difíciles de seguir, asociado o no a los problemas en funcionalidad, deterioro cognitivo y la presencia de depresión, lo cual origina alta frecuencia de no adherencia farmacológica. 
+				p En la siguiente parte expondremos evidencia en algunos factores frecuentes para no adherencia: 
+				
+				p 
+					strong Tipo de bifosfonato, dosis y frecuencia:
+					| estudios han demostrado que los tratamientos que requieren múltiples dosis reducen la probabilidad que el paciente sea adherente, por lo cual se pensaría que, al extender los intervalos de dosis, mejoraría la conveniencia de la terapia (Gold, D. T., & Silverman, S. 2006). Los estudios demuestran que menor frecuencia en la dosis (alendronato semanal vs diario) está asociada con mejor persistencia a dos años (48 % vs 33 %) (Siris, E. S., et al , 2009) Entre las causas reportadas por los pacientes para no adherencia a los bifosfonatos están: la naturaleza asintomática de la enfermedad, preocupación acerca de los efectos adversos a la terapia, costo del tratamiento, y la falta de conocimiento acerca de los resultados de no ser adherente, además de problemas de memoria (Gold, D. T., & Silverman, S. 2006). 
+				p Efectos adversos gastrointestinales: Los pacientes con antecedentes de enfermedades gastrointestinales tienen mayor probabilidad de desarrollar síntomas durante la terapia con bifosfonato oral y a la suspensión de la terapia. Estudios realizados en vida real, notan que las quejas más frecuentes son dispepsia, reflujo gastroesofágico y nausea, menos frecuente esofagitis y ulceras gástricas (Modi, A., et al, 2016). Además, estudios observacionales en mujeres con osteopenia y osteoporosis (POSSIBLE-US, MUSIC-OS) sugieren que las pacientes con síntomas digestivos tienen menor adherencia, satisfacción con el tratamiento y alto riesgo de suspensión o cambio de la terapia (Modi, A., et al, 2016) (Woo, C., Gao, G., Wade, S., & Hochberg, M. C., 2010).
+				
+				//- texto resaltado
+				div
+					div.span10.resaltado-txt
+						p Existen múltiples factores que afectan la adherencia en los pacientes con osteoporosis: poca información acerca de la enfermedad, inadecuada interacción entre profesionales de salud y el paciente, la naturaleza asintomática de la osteoporosis, necesidad de tratamiento crónico, efectos adversos asociados a los medicamentos. los requisitos para la toma del medicamento (en el caso de los bifosfonatos) y creencias y temores personales. 
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-5')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=300080&chapterid=8953', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=300080&chapterid=8955', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

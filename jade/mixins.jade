@@ -35,6 +35,18 @@ mixin banner-video(modnumber)
 		div.title
 			div Diplomado Virtual
 			div Osteoporosis
+			
+mixin banner-imagen
+	div.banner-videos
+		div#video
+			figure.galeria
+				//- a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/osteoporosis-amgen/images/mod0/banner-mod-0.jpg' data-lightbox='example-1')
+				img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/osteoporosis-amgen/images/mod0/banner-mod-0.jpg' alt='image-1')
+			
+		div.title-bg
+		div.title
+			div Diplomado Virtual
+			div Osteoporosis
 
 //- ---------------------------- paginador ------------------------------- //
 mixin link(href, name)
@@ -87,7 +99,13 @@ mixin material-modulo(id)
 			div(id=id)
 			
 //- ---------------------------- Codigos modulos ------------------------------- //
-				
+mixin titulo-modulo-3
+	h2 Módulo 3 / 
+		span Evaluación integral del paciente con riesgo de fractura.
+
+mixin titulos-modulo(title, content)
+	h2= title 
+		span= content
 				
 				
 				

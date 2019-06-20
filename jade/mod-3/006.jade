@@ -1,0 +1,118 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-3')
+				
+				+titulo-modulo-3
+					
+				h3 7. ¿Cómo se clasifica la osteoporosis?
+				
+				p La mejor forma de abordar la osteoporosis es entendiendo su mecanismo fisiopatológico, por lo tanto dado que ésta es una enfermedad relacionada con el envejecimiento, debería ser considerada como idiopática, excepto en los casos en los que se puede establecer un mecanismo causal y que debe ser entendida como osteoporosis secundaria
+				p Dentro de la osteoporosis primaria o idiopática, se incluye la osteoporosis juvenil, posmenopáusica y senil. 
+				
+				h4 Osteoporosis primaria:
+				
+				//- Acordion
+				div.accordion#accordion2
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseOne')
+								span Osteoporosis juvenil idiopatica
+						div#collapseOne.accordion-body.collapse.in
+							div.accordion-inner
+								p (IJO), se usa para indicar osteoporosis en niños y adolescentes, y generalmente no se refiere a ningún tipo específico de osteoporosis en estos grupos de edad.
+								p Las posiciones pediátricas oficiales de la Sociedad Internacional para Densitometría Clínica (ISCD) definieron la osteoporosis en niños sobre la base de una historia de una o múltiples fracturas de fragilidad vertebral o la presencia de una historia de fractura clínicamente significativa, definida como la ocurrencia de al menos dos fracturas óseas de huesos largos antes de los 10 años de edad o tres o más fracturas de huesos largos hasta los 19 años, en ausencia de enfermedad local o trauma de alta energía, así como una puntuación Z de la DMO ≤ - 2.0 (DE) en la columna lumbar y / o en el cuerpo sin cabeza ajustado por edad, género y tamaño corporal. La cadera total y el cuello femoral no son los sitios de medición preferidos para los niños en crecimiento debido a la variabilidad inherente en el desarrollo del esqueleto.
+								p En bebés y niños, se debe informar un diagnóstico de “baja masa ósea” cuando la puntuación Z de la DMO es menor a - 2.0 DE y no hay antecedentes de fractura. Sin embargo, en niños menores de 5 años, la interpretación de los resultados de DEXA puede no ser apropiada porque el impacto del retraso en el crecimiento no es cuantificable.
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseTwo')
+								span Osteoporosis posmenopáusica
+						div#collapseTwo.accordion-body.collapse
+							div.accordion-inner
+								p Se asocia con el agotamiento de los estrógenos, lo que aumenta la pérdida ósea que se produce con el envejecimiento.
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse3')
+								span La osteoporosis en los hombres
+						div#collapse3.accordion-body.collapse
+							div.accordion-inner
+								p Sigue siendo subestimada. Alrededor del 20% de todas las fracturas de cadera se producen en hombres, y la incidencia de fracturas vertebrales es aproximadamente la mitad que para las mujeres. Sin embargo, la mortalidad y la morbilidad por fracturas osteoporóticas en hombres son más altas que en mujeres. 
+								p La exclusión de las condiciones patológicas subyacentes en la osteoporosis masculina es obligatoria.
+				
+				
+				p De acuerdo con las posiciones de ISCD (The International Society For Clinical Densitometry), la densitometría ósea es necesaria para confirmar un diagnóstico de osteoporosis en hombres mayores de 70 años o en aquellos con antecedentes de fracturas por fragilidad . Además, la medición de la DMO con DEXA se justifica para los sujetos masculinos de cualquier edad en presencia de un factor de riesgo para la masa ósea baja, como el bajo peso corporal, el uso de medicamentos de alto riesgo o una enfermedad o afección asociada con la pérdida ósea. 
+				
+				h4 Osteoporosis secundaria 
+				
+				p La osteoporosis secundaria es un término general para todas las condiciones clínicas donde la afectación ósea no es el principal hallazgo patológico, ver tabla No 2.
+				
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla No 2. Casusas secundarias de osteoporosis. (Painter SE et al, 2006)
+					thead
+						tr
+							th GRUPO
+							th CAUSAS
+					tbody
+						tr
+							td Endocrinopatias
+							td Hipogonadismo, Hipercortisolismo, Hiperparatiroidismo, Hiperprolactinemia, Diabetes Mellitus tipo 1, Acromegalia, Deficiencia de Hormona de crecimiento.
+						tr
+							td Enfermedades Hematológicas
+							td Mieloma Múltiple, Enfermedades mielo o linfoproliferativas, Mastocitosis sistémica, Talasemia
+						tr
+							td Enfermedades gastrointestinales
+							td Enfermedad hepática crónica, Enfermedad Celiaca, Enfermedad inflamatoria intestinal, Mala absorción intestinal, Insuficiencia pancreática
+						tr
+							td Enfermedades reumáticas
+							td Artritis Reumatoidea, Lupus eritematosos Sistémico, Espondilitis Anquilosante, Artritis Psoriasica, Escleroderma
+						tr
+							td Enfermedades renales
+							td Hipercalciuria idiopática, Acidosis tubular renal, Enfermedad renal crónica
+						tr
+							td Otras enfermedades
+							td Anorexia, Fibrosis quística, Hemocromatosis, EPOC
+						tr
+							td Colagenopatias
+							td Osteogénesis imperfecta, Sindome de Herles Danlos, Sindrome de Marfan, Homocistinuria
+						tr
+							td Medicamentos
+							td Ciclosporina, hormona tiroidea en dosis supresiva, anticonvulsivantes, drogas anticancer (inhibidores de la aromatasa, agonistas antagonistas de la GnRH), metrotrexate, anticoagulantes, diuréticos de asa)
+						tr
+							td Otros
+							td Alcoholismo, Tabaquismo, Adicción a droga, Inmobilización, Incapacidad severa 
+							
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-3')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=299791&chapterid=8920', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=299791&chapterid=8922', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

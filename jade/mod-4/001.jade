@@ -1,0 +1,74 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-4')
+				
+				+titulos-modulo('Módulo 4 / ', 'Estrategias óptimas de tratamiento de la osteoporosis postmenopáusica')
+				
+				p 
+					strong Dr. José Fernando Molina, MD
+					| Médico Reumatólogo, Universidad del Estado de Louisiana, New Orleans. Unidad de Osteoporosis y Reumalab, Medellín.		
+					
+				h3 1. Objetivos del módulo
+				
+				//- Tabs
+				div.bs-docs
+					ul#myTab.nav.nav-tabs
+						li.active
+							a(href='#1' data-toggle='tab') 1
+						li
+							a(href='#2' data-toggle='tab') 2
+						li
+							a(href='#3' data-toggle='tab') 3
+					div#myTabContent.tab-content
+						div.tab-pane.fade.active.in#1
+							p Conocer las estrategias aprobadas para el tratamiento de la osteoporosis.
+						div.tab-pane.fade#2
+							p Identificar los diferentes tipos de medicamentos para el manejo de la osteoporosis, dosis y efectos secundarios.
+						div.tab-pane.fade#3
+							p Plantear un esquema de manejo para osteoporosis postmenopáusica. 
+							
+							
+				h3 2. Introducción 
+				
+				p 
+					strong La osteoporosis (OP) es una enfermedad esquelética sistémica caracterizada por baja masa ósea y deterioro de la microarquitectura del tejido óseo con un aumento en la fragilidad del hueso que predispone al riesgo de fractura de bajo trauma o sin trauma, afectando a la población mundial generando gastos importantes en la salud pública. 
+				p El objetivo del tratamiento de pacientes con OP es prevenir las fracturas, disminuir el dolor si estuviera presente y mantener la función esquelética. 
+				p La educación del paciente comienza desde la infancia con una buena nutrición y la práctica de ejercicio físico que debe ser mantenida en la adultez, esto con el fin de lograr un adecuado pico de masa ósea (PMO).
+				p El tratamiento incluye:
+				
+				ul
+					li Medidas generales de prevención. 
+					li Tratamiento farmacológico de la enfermedad.
+					li Manejo de las fracturas asociadas a la osteoporosis (tema no cubierto en este documento).
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-4')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=299998&chapterid=8934', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
