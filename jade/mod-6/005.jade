@@ -1,0 +1,90 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-6')
+				
+				+titulos-modulo('Módulo 6 / ', 'Estrategias de Prevención Secundaria de Fracturas por Fragilidad (FLS)')
+					
+				h3 6. Ejemplos de Servicios de Enlace para el tratamiento de fracturas por fragilidad
+				
+				h4 Indicadores de Gestión en su implementación
+				
+				p A continuación, se incluyen ejemplos de modelos centrados en la figura de un coordinador para la atención postfractura y los mismos demuestran haber implementado un enfoque sistémico para prevenir exitosamente las fracturas por fragilidad en muchos países, aun con sistemas médicos estructuralmente diferentes.  
+				
+				h4 Concord Repatriation General Hospital, Sídney
+				
+				p En el año 2005, el Concord Repatriation General Hospital, inauguró el servicio coordinado para el tratamiento de fracturas traumáticas mínimas (MTFL), (Lih, A. et al, 2010). El MTFL atiende pacientes con fracturas por fragilidad pero que no presentan un grado de fragilidad avanzado (el servicio de ortogeriatría provee la atención médica a aquellos pacientes con un nivel alto de fragilidad ósea). Las consultas de este servicio estuvieron a cargo de un estudiante avanzado de primer año con una exigencia de tiempo completo equivalente a 0.4 ETC. (i.e. un médico en el 4° y 6° año de posgrado). 
+				p El impacto del servicio coordinado para el tratamiento de fracturas traumáticas mínimas se evaluó después de 4 años. A fines comparativos estadísticos se consideró como grupo de control a los pacientes con fracturas que decidieron no aceptar la consulta gratuita ofrecida por este servicio y eligieron continuar tratándose con el médico de atención primaria. La incidencia de nuevas fracturas fue un 80% inferior a la del grupo de control en los pacientes tratados por el servicio coordinado para el tratamiento de fracturas traumáticas mínimas. 
+				p Un análisis (Cooper, MS. Et al, 2011) publicado hace poco relacionado con la eficacia en cuanto a los costos del servicio coordinado para el tratamiento de fracturas traumáticas mínimas indicó: 
+				
+				//- Tabs
+				div.bs-docs
+					ul#myTab.nav.nav-tabs
+						li.active
+							a(href='#1' data-toggle='tab') 1
+						li
+							a(href='#2' data-toggle='tab') 2
+						li
+							a(href='#3' data-toggle='tab') 3
+					div#myTabContent.tab-content
+						div.tab-pane.fade.active.in#1
+							p Una leve mejora en la expectativa de vida ajustada por calidad por paciente del 0.089 en el índice QALY (Indice Año de calidad de vida ajustado a salud). 
+						div.tab-pane.fade#2
+							p Compensación parcial de los costos más altos del servicio MTFL por disminución de las fracturas subsiguientes, que derivó en una reducción de 1.486 dólares australianos por paciente en el período de simulación a 10 años. 
+						div.tab-pane.fade#3
+							p Los costos incrementales por mejoramiento del QALY (cociente costo incremental-efectividad) ascendieron a 17291 dólares australianos, muy por debajo del monto máximo de 50000 dólares australianos que se acepta pagar en Australia por cada QALY ganado. 
+							
+							
+				h4 St. Michael’s Hospital, Toronto
+				
+				p El “Programa de Atención Ejemplar para la Osteoporosis” se estableció en un centro de traumatología regional y educativo de gran tamaño de Toronto en el año 2002 (Bogoch, E.R., 2006). Se nombró un coordinador para detectar los casos de pacientes con fracturas, indicarles el consumo de suplementos de calcio y vitamina D y brindarles información sobre la osteoporosis y su tratamiento. El coordinador también facilitaba la derivación para la realización de exámenes de densidad mineral ósea, la reserva de consultas en un centro de enfermedades óseas metabólicas y la entrega de recetas de medicamentos antiresortivos por parte del equipo de ortopedia. Este programa de atención ejemplar para la osteoporosis brinda tratamiento para prevenir una segunda fractura tanto a pacientes hospitalizados como ambulatorios. 
+				p Durante el primer año de funcionamiento, 430 pacientes con fracturas se registraron en este programa (276 pacientes ambulatorios y 154 pacientes hospitalizados). Más del 96% de estos pacientes recibieron atención adecuada para osteoporosis. Ochenta (36%) de los 221 pacientes ambulatorios que cumplían con los criterios de inclusión del estudio ya habían recibido tratamiento para osteoporosis. Ciento veinticuatro pacientes (56%) habían sido derivados al centro de enfermedades óseas metabólicas o al médico clínico para recibir tratamiento para osteoporosis. Entre los 128 pacientes hospitalizados que cumplían con los criterios de inclusión, 31% ya había recibido un diagnóstico y tratamiento para osteoporosis, el 24% había iniciado el tratamiento y el 34% había sido derivado a un centro de enfermedades óseas metabólicas o al médico clínico para consultar sobre el tratamiento a seguir después de haber recibido el alta hospitalaria. 
+				p El análisis costo-efectividad (Sander, B, et al, 2008) demostró que un centro de atención terciaria que contrata a un coordinador para el tratamiento de la osteoporosis que se ocupa de 500 pacientes con fracturas por fragilidad por año podría reducir la cantidad de futuras fracturas de cadera de 34 a 31 el primer año, con el consecuente ahorro de 48950 dólares canadienses (a valor del año 2004) para el hospital, considerando un enfoque conservador. El análisis de sensibilidad reveló un 90% de probabilidad en cuanto al hecho de que la contratación de un coordinador cuesta menos de 25000 dólares canadienses por cada fractura de cadera que se evita. Contratar a un coordinador resulta una medida eficaz en cuanto a costos incluso cuanto el coordinador se ocupe solamente de 350 pacientes por año. Se prevén ahorros más importantes después del primer año, incluso cuando se consideran costos adicionales tales como rehabilitación y dependencia. 
+				
+				h4 Hospitales en Singapur
+				
+				p OPTIMAL (Osteoporosis Patient Targeted and Integrated Management for Active Living) es un programa de tratamiento de la osteoporosis financiado por el Ministerio de Salud que se implementó en varios hospitales de Singapur en 2008 (International Osteoporosis Foundation, 2017). El propósito de este programa es prevenir la segunda fractura a través de la detección, el seguimiento médico y administrativo de los servicios médicos, el subsidio de medicamentos y la fisioterapia. 
+				p En el año 2011, se llevó a cabo una revisión de los pacientes reclutados a través del programa OPTIMAL en el hospital más grande de Singapur. Se evaluaron 5608 pacientes en el hospital entre mayo de 2007 y marzo de 2012. Novecientos setenta y siete de los 1434 pacientes con fracturas por fragilidad habían sido reclutados en el programa según los criterios de inclusión que comprendían el hecho de ser mayor de 50 años, haber sufrido una fractura por fragilidad después de los 50 años, estar de acuerdo con participar en el programa y poder cumplir con la intervención y el seguimiento. En la actualidad se hace el seguimiento a 659 pacientes dentro del hospital. En diciembre de 2011, el seguimiento realizado a los 112 pacientes que habían cumplido 2 años de permanencia en el programa reveló que se había realizado una densitometría ósea inicial al 98% de los pacientes, y una densitometría ósea inicial y otra a los 2 años de seguimiento al 64,3% de los pacientes. 
+				p Al inicio del estudio, el 95% de los pacientes no recibía un tratamiento para la osteoporosis. Sesenta y cinco de los 66 pacientes sin tratamiento previo iniciaron la terapia luego del reclutamiento. El 83% de los pacientes finalizó la terapia a los 2 años, tal como lo demuestra una tasa de posesión de medicamentos del >80%. El 59% realizaba ejercicio (con peso) al finalizar el seguimiento a los 2 años, es decir, continuaba realizando este tipo de ejercicio durante más de 30 minutos, más de 3 veces por semana. Hubo un leve aumento de la DMO de la columna vertebral del 5,8% (p=0,00) y de toda la cadera del 2,94% (p=0,00). Aquellos pacientes que realizaban ejercicio mostraron un aumento significativamente mayor de la DMO en la cadera (p≤0,05) luego de los 2 años. Si bien el objetivo del estudio no era detectar diferencias significativas desde el punto de vista estadístico, se observó una tendencia hacia una menor tasa de fracturas en los pacientes que finalizaron el tratamiento a los 2 años en comparación con un grupo histórico de control. Las tasas de fractura fueron 0,9%, 0,9% y 3,6% en la cadera, otras regiones no vertebrales y vertebrales respectivamente en el grupo de estudio, en comparación con tasas de 1,9%, 3,4% y 4,3% en los mismos sitios en el grupo histórico de control. 
+				p Durante los 3 años posteriores a su creación, el programa OPTIMAL identificó y evaluó con éxito a una gran cantidad de pacientes con fracturas por fragilidad en el hospital. Todos los componentes de este programa sumamente sencillo parecen haber contribuido a reducir la falta de tratamiento de las fracturas por fragilidad y se observó una alta tasa de ingesta de medicamentos. El mayor éxito del programa se medirá por la cantidad de fracturas evitadas en el tratamiento a largo plazo y la efectividad en cuanto a los costos, pero los pasos claros y efectivos de evaluar a las personas con fracturas a quienes se les realiza exámenes para medir la DMO y se les ofrece opciones de tratamiento ya han comenzado. 
+				
+				h4 Hospital Académico de Maastricht
+				
+				p En el año 2004, se implementó una estrategia para la prevención de la segunda fractura dirigida a todos los individuos de >50 años que ingresaban con fractura al Hospital Académico de Maastricht (Van Helden S, et al, 2007). El servicio estaba a cargo de enfermeros especializados en osteoporosis. Los pacientes tratados como ambulatorios eran atendidos directamente después de la primera visita y los pacientes hospitalizados eran tratados durante su estadía en el hospital. Los estudios incluían densitometría ósea, evaluación del factor de riesgo de osteoporosis y de caídas. Los pacientes con posibles causas secundarias de osteoporosis fueron derivados a la unidad de medicina interna para mayor estudio. Se brindó asesoramiento sobre la necesidad de una ingesta adecuada de calcio y vitamina D (Huntjens, K.Sm.B., et al, 2011). Los pacientes con osteoporosis según densitometría ósea fueron tratados de acuerdo con los consensos nacionales. Al comparar Ia iniciativa Capture de Fracture IOF/ Indicadores de gestión
+				
+				p Por todo lo anterior y en vista de lo positivo que implica el desarrollo de servicios de cuidado de pacientes con fracturas por fragilidad se desarrolló el programa “Capture the Fracture” que es una campaña mundial desarrollada para facilitar la implementación de modelos de atención multidisciplinarios centrados en la figura de un coordinador para la prevención de la segunda fractura. La Fundación Internacional de Osteoporosis (IOF) cree que ésta es la única medida de importancia que se puede adoptar para mejorar directamente la atención del paciente y reducir los costos médicos relacionados con las fracturas que se incrementan vertiginosamente en todo el mundo. (International Osteoporosis Foundation, 2017)
+				p Los miembros de la IOF comparten una visión común de un mundo sin fracturas osteoporóticas (International Osteoporosis Foundation, 2017) Proyecciones mundiales estiman que una persona sufre una fractura osteoporótica cada 3 segundos. Sabemos que una fractura anterior duplica el riesgo de que un paciente sufra una fractura en el futuro. Además, los estudios de varios países han informado que el 45% o más de los pacientes que actualmente padecen una fractura de cadera tienen antecedentes de fracturas, y los datos indican que casi la mitad de todas las mujeres y un tercio de los hombres con fractura de cadera sufrirán una nueva fractura por fragilidad en algún momento de sus vidas. Evidentemente los sistemas de salud fracasan en su respuesta ante la primera fractura para prevenir la segunda –esto es, trágicamente, una oportunidad perdida para la intervención (International Osteoporosis Foundation, 2017)
+				p El programa “Capture the Fracture” se desarrolló con el propósito de mejorar la práctica de prevenir una segunda fractura promoviendo y facilitando la implementación del tratamiento de las fracturas osteoporóticas. Después de analizar la información disponible se ha determinado que la implementación de un manejo multidisciplinario centrado en el paciente y la figura de un coordinador para la atención integral es el método más costo-efectivo para la prevención de la segunda fractura.
+				p El programa se dio a conocer a través de un sitio en Internet que permite inscribir los centros interesados en la formación de grupos de atención interinstitucional (Bogoch, E. R., 2006; Sander, et al, 2008; Dell, R. et al, 2008; Greene, D., & Dell, R. M., 2010; Carpintero, P. et al, 2009; Harrington, JT., et al, 2005; Block, MC. et al, 2007; Huntjens, K.M.B. 2011; Vaile, J, et al, 2007; Van Helden, S., et al, 2007). Un mapa muestra los sitios donde se desarrollan las mejores prácticas actuales de todo el mundo, las herramientas específicas del país para la implementación de los centros con presencia de un coordinador, un lugar para almacenar las publicaciones de investigaciones relacionadas y un listado de socios que brindan su apoyo. El propósito del sitio en Internet es promover las iniciativas locales y nacionales, además de convertirse en una plataforma para las organizaciones u hospitales donde compartir sus programas, información y estrategias locales efectivas para ser implementadas si resultan efectivas.
+				p Adicional a lo anterior, la IOF busca la participación de una coalición internacional de socios multidisciplinarios preocupados en el tratamiento de las fracturas por fragilidad. Se han invitado a una representación importante de grupos de ortopedia, geriatría, reumatología, endocrinología, salud ósea general de todo el mundo y otras organizaciones médicas y hospitalarias (International Osteoporosis Foundation., 2017) Se ha procurado también contar con entes gubernamentales de todo el mundo y se espera que se pueda reflejar el problema endémico social que produce la fragilidad ósea en la calidad de vida de las diferentes poblaciones. (Skelton DA, Neil F, 2009; McLellan, A.R, et al, 2011; Australian Bureau of Statistics, 2011; Morley,  John E., M.B., B.Ch., 2009; Centre for Population Health, 2011). 
+				p La IOF ha logrado que los miembros de los Comités de Sociedades Nacionales de Metabolismo osteomuscular, osteoporosis, menopausia, endocrinología, ortopedia, reumatología y demás asociaciones afines estén interesados en participar en la campaña “Capture the Fracture”, (International Osteoporosis Foundation, 2017) ya que se considera que una amplia coalición es fundamental para garantizar el tratamiento adecuado de las fracturas osteoporóticas en todo el mundo. Se confía que, con el apoyo de las sociedades nacionales, la campaña determine una diferencia importante para el tratamiento de los pacientes, logrando un ahorro significativo para los sistemas de salud (International Osteoporosis Foundation, 2017)
+				
+				//- Material modulo
+				+material-modulo('material-mod-6')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=308951&chapterid=9162', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=308951&chapterid=9164', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

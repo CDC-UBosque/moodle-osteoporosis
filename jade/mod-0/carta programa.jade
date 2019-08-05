@@ -1,0 +1,48 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//-banner modulo 1
+				+banner-imagen
+				
+				h2 Módulo 0 / 
+					span Carta bienvenida director del programa
+					
+				//- h3 Cronograma
+				
+				//- Table
+				p En nombre de los especialistas que se han encargado del diseño de los contenidos para este diplomado virtual y que los acompañarán en el desarrollo de cada una de las actividades planteadas, quiero darles la más cordial bienvenida.
+				p En primera medida es importante conocer y entender la importancia del abordaje de la Osteoporosis como una enfermedad de alta prevalencia a nivel mundial y local, que se relaciona con una incidencia importante de fracturas, generando un alto impacto en la calidad de vida de los pacientes y una alta carga de enfermedad.
+				p En este diplomado se pretende brindar herramientas para establecer un enfoque integral del paciente con Osteopoirosis, teniendo en cuenta aspectos como: Carga de la Enfermedad por Osteoporosis, fisiología, Recomendaciones actuales de las principales Guías de Práctica Clínica, enfoque farmacológico y no farmacológico, etc.
+				p Esperamos que los contenidos de este diplomado contribuyan en el ejercicio profesional de cada uno de ustedes y sea aplicable en el abordaje integral de sus pacientes.
+				
+				h3 Alvaro Fernando Burbano Delgado
+				
+				p Director Académico Diplomado
+					br/ Universidad El Bosque
+							
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303119&chapterid=9061', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303119&chapterid=9075', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

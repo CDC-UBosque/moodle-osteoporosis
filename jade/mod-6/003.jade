@@ -1,0 +1,43 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-6')
+				
+				+titulos-modulo('Módulo 6 / ', 'Estrategias de Prevención Secundaria de Fracturas por Fragilidad (FLS)')
+					
+				h3 4. ¿Qué es el efecto cascada de las fracturas por fragilidad?
+				
+				p Se puede predecir con certeza el riesgo que presenta una población de fracturarse por osteoporosis, esta posibilidad de identificar sistemáticamente a una porción importante de individuos que padecerán fracturas por fragilidad en el futuro se atribuye al fenómeno bien conocido que una fractura conduce a otra fractura, efecto “cascada” (Gallagher, J. C., et al, 1980; Port, L., et al, 2003). Aquellos pacientes que sufren una fractura osteoporótica por fragilidad presentan mayores posibilidades de sufrir nuevas fracturas; de hecho, tienen el doble de posibilidades de sufrir una fractura que aquellas personas que no tuvieron una. Es así como, desde hace treinta años sabemos que casi la mitad de pacientes con fracturas de cadera anteriormente han sufrido otra fractura (McLellan, Alastair R. et al, 2004).
+				p Las fracturas por fragilidad son frecuentes: 1 de 3 mujeres y 1 de 5 hombres mayores de 50 años las sufrirán (Edwards, B. J., et al, 2007). Proyecciones mundiales estimaron que en el año 2000 se produjeron 9 millones de nuevas fracturas por fragilidad, de las cuales, 1600000 fueron fracturas de cadera, 1700000 de radio distal, 700000 de húmero proximal y 1400000 vertebrales. La mitad de todas estas fracturas ocurrieron en Europa y América, mientras que la mayoría de las restantes se produjeron en la región del Pacífico Occidental y el Sudeste Asiático, sabiendo de las limitaciones de los registros de fracturas y lo que hace pensar que el número pueda ser mayor (Klotzbuecher, C. M., et al, 2000; Kanis. J. A., et al, 2004; British Orthopaedic Association & British Geriatrics Society, 2007). Si bien la morbilidad, mortalidad y los costos relacionados con las fracturas de cadera pueden ser evaluados gracias a datos relativamente confiables, no debe subestimarse el impacto de las fracturas por fragilidad en otros lugares del esqueleto. Las fracturas de muñeca, húmero y columna vertebral suelen ocurrir a una edad más temprana que las fracturas de cadera y son predictoras de la misma (Klotzbuecher, C. M.,et al, 2000; Kanis. J. A., et al, 2004). De hecho, se estimó que tales fracturas sextuplican la morbilidad resultante de las fracturas de cadera. En el año 2005, la Fundación Internacional de Osteoporosis (IOF) estimó que el costo directo total de las fracturas osteoporóticas en Europa fue de 32000 millones de euros por año, una cifra que se prevé aumentará a 38 500 millones de euros en el año 2025 (Kanis, J. A., & Johnell, O., 2005). En 2002, se calculó que el costo combinado de todas las fracturas osteoporóticas en los Estados Unidos ascendía a 20000 millones de dólares por año. Una parte considerable de estas sumas se asocian al cuidado social y de la salud relacionado con la fractura de cadera. Sin embargo, el impacto económico de las fracturas vertebrales y las fracturas por fragilidad también es significativo (Newman, E. D., et al, 2003). 
+				p En el año 2005, se calculó que el costo de las fracturas vertebrales en Europa ascendía a 719 millones de euros (British Orthopaedic Association & British Geriatrics Society, 2007). En el sistema de salud Geisinger de los Estados Unidos, el modelo económico médico sugirió que el 37% de todos los costos de atención médica se debían a fracturas osteoporóticas relacionadas con fracturas por fragilidad que no son de cadera (Newman, E. D., et al, 2003).  Las consecuencias económicas de los aumentos de la prevalencia de la osteoporosis entre las poblaciones que envejecen rápidamente en Asia, América Latina y el Medio Oriente debe ser una de las principales preocupaciones para los legisladores de estas zonas. En el año 2006, China gastó 1600 millones de dólares en la atención de las fracturas de cadera, una cifra que se espera alcance los 265000 millones de dólares para el 2050 (Kanis, J. A., et al, 2004; British Orthopaedic Association & British Geriatrics Society, 2007; Eisman, J., et al, 2004; International Osteoporosis Foundation, 2010; International Osteoporosis Foundation, 2011; Pinheiro, M.M., et al, 2009).
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-6')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=308951&chapterid=9160', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=308951&chapterid=9162', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

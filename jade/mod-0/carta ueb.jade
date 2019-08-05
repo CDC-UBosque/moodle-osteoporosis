@@ -1,0 +1,53 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//-banner modulo 1
+				+banner-imagen
+				
+				h2 Módulo 0 / 
+					span Carta Universidad El Bosque
+					
+				//- h3 Cronograma
+				
+				//- Table
+				p Apreciados participantes del Diplomado:
+				p Desde la Facultad de Medicina y la División de Educación Continuada, de la Universidad El Bosque, les damos la más grata bienvenida al Diplomado Virtual en Osteoporosis, proyecto que cuidadosamente hemos construido.
+				p Hemos trabajado intensamente con un equipo de expertos de la más amplia experiencia, y gran reconocimiento, que responden a las exigencias de los Programas Acreditados de Alta Calidad de la Facultad de Medicina.
+				p Hemos integrado un equipo interdisciplinario que hace posible la realización del Diplomado virtual, facilitando la posibilidad de impactar a un grupo muy amplio de profesionales  de distintas ciudades y regiones del país.
+				p El objetivo es desarrollar un Diplomado  virtual que les permita actualizar el conocimiento y les brinde las herramientas para desempeñar de mejor manera su trabajo, contribuyendo al mejoramiento de la Salud y Calidad de vida de los usuarios de los servicios de salud, propósito que se alinea a la perfección con la orientación estratégica de la Universidad El Bosque.
+				p Durante estos meses tendrán acceso a la literatura científica más actualizada, podrán interactuar con expertos y colegas, compartir puntos de vista, aportar desde su experiencia y lo más importante, entre todos, generar y actualizar conocimiento.  A través del diplomado, podrán realizar diferentes  actividades y hacer exámenes para verificar su aprendizaje.  
+				p Desde la Universidad El Bosque queremos que tengan una experiencia gratificante y de gran aprendizaje. 
+				p Nuevamente Bienvenidos!!
+				p Cordialmente,
+				
+				h3 María del Rosario Bozón G.
+				
+				p Directora Educación Continuada
+					br/ Universidad El Bosque
+							
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303119&chapterid=9060', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

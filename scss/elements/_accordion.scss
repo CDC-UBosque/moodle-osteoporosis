@@ -40,6 +40,26 @@
 					background: $color_light_background;
 				}
 				
+				.accordion-body.show{
+					height: auto !important;
+					@include prefix(transition, height 0.35s ease, webkit moz o);
+				}
+				
+				.accordion-body.in.collapse{
+					height: auto !important;
+					@include prefix(transition, height 0.35s ease, webkit moz o);
+				}
+				
+				.accordion-body.collapse{
+					height: 0 !important;
+					@include prefix(transition, height 0.35s ease, webkit moz o);
+				}
+				
+				.accordion-body.in.collapse.show{
+					height: auto !important;
+					@include prefix(transition, height 0.35s ease, webkit moz o);
+				}
+				
 			}
 			
 		}

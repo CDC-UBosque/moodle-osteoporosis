@@ -1,0 +1,75 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-6')
+				
+				+titulos-modulo('Módulo 6 / ', 'Estrategias de Prevención Secundaria de Fracturas por Fragilidad (FLS)')
+				
+				p 
+					strong Dr. Francisco Bernardo Linares Restrepo
+					| Especialista en Ortopedia y Traumatología, Ortopedia Oncológica, Director Departamento de Ortopedia de la Pontificia Universidad Javeriana y del Hospital Universitario San Ignacio.
+					
+				h3 1. Objetivos de Aprendizaje
+				
+				//- Tabs
+				div.bs-docs
+					ul#myTab.nav.nav-tabs
+						li.active
+							a(href='#1' data-toggle='tab') 1
+						li
+							a(href='#2' data-toggle='tab') 2
+						li
+							a(href='#3' data-toggle='tab') 3
+						li
+							a(href='#4' data-toggle='tab') 4
+						li
+							a(href='#5' data-toggle='tab') 5
+					div#myTabContent.tab-content
+						div.tab-pane.fade.active.in#1
+							p Presentar la estadística sobre la prevalencia de las fracturas por fragilidad en el mundo.
+						div.tab-pane.fade#2
+							p Mostrar el impacto social, económico y personal de las fracturas por osteoporosis.
+						div.tab-pane.fade#3
+							p Definir el efecto cascada de las fracturas por fragilidad.
+						div.tab-pane.fade#4
+							p Presentar la importancia de la creación de servicios de enlace para el tratamiento de la fractura por fragilidad.
+						div.tab-pane.fade#5
+							p Mostrar el costo beneficio de la implementación de programas para la prevención secundaria de fracturas por osteoporosis.
+							
+							
+				h3 2. Introducción 
+				
+				p La morbimortalidad asociada a la fractura por fragilidad genera alto riesgo de muerte, dependencia, internación en centros geriátricos y altos costos en los sistemas de salud, mientras que el tratamiento efectivo y multidisciplinario de la osteoporosis genera una clara y palpable disminución de la incidencia de nuevas fracturas, de la tasa de mortalidad y de ahorro para los sistemas de salud (Cooper, C. et al. 2011; McCloskey, Eugene. 2009).
+				p La realidad en nuestro país y en el mundo es que un muy bajo porcentaje de la población con fracturas por fragilidad de columna vertebral y de cadera recibe tratamiento para osteoporosis (van Staa, T. P., et al 2001).  Es por esto que se desencadena lo que se ha llamado la cascada de la osteoporosis, en la cual se presentan nuevas fracturas cada vez más deletéreas para la salud y la calidad de vida de los pacientes. Los programas destinados a la prevención de nuevas fracturas, han mostrado mejoría en las tasas de morbimortalidad y alto impacto en la calidad de vida. (van Staa, T. P., et al 2001; Rockville: Office of the Surgeon General (US), 2004; Kanis, J. A. et al 2013).  
+				p En el Hospital San Ignacio de Bogotá, un 27% de la población con fractura de cadera recibe tratamiento. El objetivo es implementar un programa multidisciplinario que integre el tratamiento de la osteoporosis de la manera más rápida y eficiente, la prevención de caídas y la seguridad en el hogar para lograr disminuir las tasas de nuevas fracturas y mejorar los índices de movilidad y mortalidad.
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-6')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=308951&chapterid=9160', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

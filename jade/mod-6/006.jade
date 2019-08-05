@@ -1,0 +1,74 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-6')
+				
+				+titulos-modulo('Módulo 6 / ', 'Estrategias de Prevención Secundaria de Fracturas por Fragilidad (FLS)')
+					
+				h3 7. Para recordar.
+				
+				ol
+					li La osteoporosis es un problema de salud pública mundial, con un efecto enorme y deletéreo para los sistemas de salud, ya que el costo del tratamiento de las fracturas es muy alto, especialmente la fractura de cadera.
+					li Las fracturas por fragilidad se han hecho endémicas en todo el mundo y el envejecimiento de la población mundial empeorará la situación en los próximos años, es necesario tratar de buscar soluciones efectivas para controlar esta situación.
+					li La morbimortalidad de las fracturas por fragilidad es muy alta y afecta a un gran número de personas. La fractura de cadera tiene un alto índice de mortalidad, pero sobretodo un deterioro importante de la calidad de vida de los pacientes que presentan este tipo de fracturas.
+					li La segunda fractura, esa cascada por fragilidad, debe evitarse a toda costa, ya que, teniendo evidencia de una fractura previa, es imperdonable no solucionar el problema de la osteoporosis.
+					li Es costo efectivo generar grupos multidisciplinarios que se encarguen de estudiar, enfocar y tratar correctamente a los pacientes que han presentado una fractura por fragilidad. Estos grupos deben estar liderados por expertos en metabolismo óseo y con la participación en los mismos de médicos, enfermeras, terapistas y auxiliares que les guste el hueso y el manejo humano de los pacientes.
+					
+				h4 8. Figuran anexas.
+					
+				//- imagen o video				
+				div.banner-video
+					div.span8
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/osteoporosis-amgen/images/mod6/0001.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/osteoporosis-amgen/images/mod6/0001.jpg' alt='image-1')
+					div.span4
+						div.img-footer
+							span Figura No 1. Definición de los grupos de pacientes a quienes se ofrece los servicios de atención pos-fractura (Adaptado de International Osteoporosis Foundation, 2017  
+								a(href='http://www.capture-the-fracture.org' target='_blank') http://www.capture-the-fracture.org/
+								| ).
+								
+				
+				//- imagen o video				
+				div.banner-video
+					div.span8
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/osteoporosis-amgen/images/mod6/0002.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/osteoporosis-amgen/images/mod6/0002.jpg' alt='image-1')
+					div.span4
+						div.img-footer
+							span Figura No 2. La “carrera osteporótica”: Fractura y morbilidad asociada durante toda la vida (Adaptada de (International Osteoporosis Foundation, 2017)
+				
+				
+								
+				//- Material modulo
+				+material-modulo('material-mod-6')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=308951&chapterid=9163', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=308951&chapterid=9165', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
