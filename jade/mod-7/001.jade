@@ -1,0 +1,89 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-7')
+				
+				+titulos-modulo('Módulo 7 / ', 'Perimenopausia, menopausia y osteoporosis')
+				
+				p 
+					strong Dr. CARLOS AUGUSTO PEREZ NIÑO MD CCD
+					br/ Médico Cirujano Universidad Militar 
+					br/ Médico Ginecólogo y Obstetra. Hospital Militar / Clínica San Rafael. Universidad Militar
+					br/ Expresidente Asociación Colombiana de Osteoporosis - ACOMM
+					br/ Expresidente Asociación colombiana de menopausia - Bogotá
+					br/ Past presidente Asociación Colombiana de Centros de Investigación Clínica ACIC
+					br/ Vicepresidente Sociedad Iberoamericana de Osteoporosis 2015 SIBOMM
+					br/ Densitometrista clínico certificado por ISCD - ACOMM - U. Javeriana
+					br/ Profesor cursos de DXA, ISCD, IOF, ACOMM, ASOMENOPAUSIA, U. Javeriana
+					br/ Investigador Clínico
+					br/ Director administrativo Unidad Integral de Endocrinología (UNIENDO) 
+					
+				h3 1. Objetivos de Aprendizaje
+				
+				p Al finalizar el módulo el participante estará en capacidad de:
+				
+				//- Tabs
+				div.bs-docs
+					ul#myTab.nav.nav-tabs
+						li.active
+							a(href='#1' data-toggle='tab') 1
+						li
+							a(href='#2' data-toggle='tab') 2
+						li
+							a(href='#3' data-toggle='tab') 3
+					div#myTabContent.tab-content
+						div.tab-pane.fade.active.in#1
+							p Conocer la fisiología y la fisiopatología de la etapa de la menopausia y su repercusión en la calidad de vida de la mujer mayor y en sus órganos blanco.
+						div.tab-pane.fade#2
+							p Familiarizarse con el uso y estado actual de la Terapia de suplencia hormonal.
+						div.tab-pane.fade#3
+							p Conocer las alternativas terapéuticas desde el punto de vista de manejo hormonal diferentes a los estrógenos.
+							
+							
+				h3 2. Introducción 
+				
+				p La menopausia, es la primera causa de osteoporosis. La expectativa de vida de la mujer cada día es mayor y el tiempo que la mujer vivirá sin protección estrogénica y en estado de hipoestrogenismo es mayor, con las consecuencias sobre calidad de  vida, sobre hueso, riesgo cardiovascular y todos los otros sistemas donde sabemos, que existe una ventana de oportunidad de aproximadamente  10 años, en los cuales  debemos aprovechar esa ventana de oportunidad para afectar positivamente a nuestras mujeres ofreciéndoles alternativas terapéuticas que conlleven a una mejor calidad de vida, a mejorar su relación de pareja, a disminuir el riesgo cardiovascular, ofrecer  protección en su calidad ósea disminuyendo el riesgo de osteoporosis y por consiguiente disminuyendo el riesgo de una fractura. Ver figura No 1.
+				p Desde el año 2002 cuando se publicaron los datos del estudio WHI, la terapia de reemplazo hormonal (TRH) sufrió una desbandada de ataques que llevaron a interrumpir casi todos los esquemas de TRH existentes por el miedo y el riesgo de una trombosis y de un cáncer de mama, conllevando a una disminución total de la calidad de vida de un gran número de mujeres a nivel mundial.
+				p Hoy a la luz de la evidencia y con el seguimiento y análisis estadístico y epidemiológico de los resultados de este estudio, el perfil de seguridad y el enfoque terapéutico cambio en una forma importante, buscando nuevamente colocar la TRH como la primera opción terapéutica en la mujer post menopáusica para mejorar su calidad de vida, prevención cardiovascular primaria y prevención de osteoporosis. (Federal Interagency Forum on Aging-Related Statistics, 2000).
+				
+				//- imagen o video				
+				div.banner-video
+					div.span8
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/osteoporosis-amgen/images/mod7/0001.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/osteoporosis-amgen/images/mod7/0001.jpg' alt='image-1')
+					div.span4
+						div.img-footer
+							span Figura No 1. Expectativa de vida y edad de la menopausia (Adaptado de Federal Interagency Forum on Aging-Related Statistics, 2000).
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-7')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=310729&chapterid=9182', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
