@@ -1,0 +1,51 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-8')
+				
+				+titulos-modulo('Módulo 8 / ', 'Modelo de Gestión de Riesgo en Osteoporosis. Responsabilidad de la APS')
+					
+				h3 6. Conclusiones
+				
+				ul
+					li Por la alta prevalencia, alta carga de la enfermedad, transición demográfica de la población y el  impacto en calidad de vida, la osteoporosis es un problema de Salud Pública.
+					li El paciente con osteoporosis frecuentemente es pluripatológico, polimedicado y con alta fragilidad, esta concomitancia ubica este grupo de personas en la punta de la pirámide de riesgo.
+					li De acuerdo con referentes internacionales para la gestión integral de riesgo para pacientes crónicos, la atención integral implica modelos costo efectivos como gestión de caso para el abordaje de este grupo poblacional.
+					li La historia natural de la enfermedad, permite la comprensión del modelo de gestión de riesgo en osteoporosis para el diseño de programas de impacto en la evolución del problema de salud.
+					li En Colombia, el Modelo de Atención Integral en Salud, tiene como punto de partida la atención primaria. En la implementación del modelo, el uso de tecnologías de la información para facilitar el acceso al conocimiento y la educación a personal de salud, será factor clave de éxito para el diagnóstico  temprano de la patología y la prevención de fracturas de los pacientes.  
+					li Para el Modelo de atención en Salud con enfoque en gestión de riesgo y para la Osteoporosis, todos los actores del sistema están involucrados de acuerdo con la historia natural del problema, sus niveles de prevención, niveles de de complejidad asistenciales y riesgos involucrados. La responsabilidad de cada actor se evidencia con la conformación de redes integrales de atención y las rutas de atención definidas por patología. 
+					li La sostenibilidad futura de los sistemas de salud en el mundo, esta supeditada a modelos de atención costo efectivos para la población que padece enfermedades crónicas que por transición demográfica y epidemiológica en la mayoria de los países tienden a aumentar de manera sostenida.
+
+
+
+				
+				
+				//- Material modulo
+				+material-modulo('material-mod-8')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=324256&chapterid=9376', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=324256&chapterid=9378', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

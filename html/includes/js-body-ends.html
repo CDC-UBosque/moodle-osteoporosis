@@ -1,0 +1,62 @@
+<!-- ================== script ================== -->
+<script src="../../Menu/menu.js" type="text/javascript"></script>
+<script src="../../Menu/timeit.js"></script>
+<script src="../../Menu/scrollbar.js"></script>
+<!-- ================== fin script ================== -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>
+  if (typeof jQuery == 'undefined') {
+  	document.write(unescape("%3Cscript src='../src/lib/jquery.1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+  
+</script>
+<script>
+  $(function() {
+  
+  	$('article').each(function() {
+  
+  		const _this = $(this);
+  
+  		_this.readingTime({
+  			readingTimeTarget: _this.find('.eta'),
+  			wordCountTarget: _this.find('.words'),
+  			success: function(data) {
+  				console.log(data);
+  			},
+  			error: function(data) {
+  				_this.find('.eta').remove();
+  			}
+  		});
+  	});
+  });
+  
+</script><script src="../../Menu/readingtime.js"></script>
+<script type="text/javascript">$(document).ready(function() {$("#single_1").fancybox({helpers: {title : {type : 'float'}}	});});</script>
+<script type="text/javascript">$(".menu-toggle").click(function() {$("nav > ul").slideToggle( "700");$("nav > ul").css('display','flex');});</script>
+<script>
+  $('#scrollup').click(function(){
+  	$(".menuanchor-top").animate({ scrollTop: 0 }, 400);
+  	return false;
+  });
+  
+  
+</script>
+<!-- <script type="text/javascript">-->
+<!-- $(".curso-cc .content-cc nav ul .dropdown").click(function() {-->
+<!--     $(".curso-cc .content-cc nav ul .dropdown .dropdown-menu").slideToggle("fast");-->
+<!-- });-->
+<!-- </script>-->
+<script>
+  $(".curso-cc .content-cc nav ul .dropdown").click(function() {
+  	$(".curso-cc .content-cc nav ul .dropdown .dropdown-menu").slideToggle("fast");
+  });
+  
+  
+  
+  
+  
+</script><!-- ================== script animate scroll ================== -->
+<script type="text/javascript">new WOW().init();</script>
+<!-- ================== fin script animate scroll ================== -->
+<!-- <script src="http://code.jquery.com/jquery.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>

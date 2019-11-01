@@ -1,0 +1,71 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-8')
+				
+				+titulos-modulo('Módulo 8 / ', 'Modelo de Gestión de Riesgo en Osteoporosis. Responsabilidad de la APS')
+				
+				p 
+					strong Dra. Angela María Montoya Jaramillo
+					br/ Médica Cirujana Universidad de Antioquia. Especialista en Gerencia de la Salud Pública Universidad CES. Magister en Administración de Negocios (MBA) Universidad EAFIT. Profesora Facultad de Medicina, Departamento de Salud Pública. Universidad CES.  Gerente Unidad de Servicios Grupo Afín. 
+					
+				h3 1. Objetivos de Aprendizaje
+				
+				p Al finalizar el módulo el participante estará en capacidad de:
+				
+				//- Tabs
+				div.bs-docs
+					ul#myTab.nav.nav-tabs
+						li.active
+							a(href='#1' data-toggle='tab') 1
+						li
+							a(href='#2' data-toggle='tab') 2
+						li
+							a(href='#3' data-toggle='tab') 3
+					div#myTabContent.tab-content
+						div.tab-pane.fade.active.in#1
+							p Relacionar referentes internacionales en Gestión de Riesgo y Gestión de casos aplicados a enfermedades crónicas de alto impacto en los sistemas de salud. 
+						div.tab-pane.fade#2
+							p Identificar estrategias a implementar en Gestión de riesgo en Osteoporosis a partir de la historia Natural de la enfermedad.
+						div.tab-pane.fade#3
+							p Conocer los elementos para la estructuración de un modelo de Gestión de Riesgo de impacto para Atención Primaria en Salud con base en la Política de Atención en Salud y el Modelo de Atención en Salud.
+							
+							
+				h3 2. Introducción 
+				
+				p Los sistemas de salud en el mundo vienen presentando transformaciones relacionadas con la evolución de cada sociedad que demanda necesidades de atención en salud específicas.  Las demandas de salud se presentan de acuerdo con un perfil que representa los valores de cada sociedad y la oferta de servicios es cada vez más costosa, tecnificada y con más capacidad de resolución para atender la creciente demanda de servicios.
+
+				p Es creciente el volumen de pacientes con enfermedades crónicas asociados a cierto nivel de dependencia que requieren cuidados especiales y específicos para mantener una vida social digna y no ser marginados de la sociedad.  Hasta ahora, en nuestra sociedad es frecuente observar que el paciente crónico dependiente se aborda con un nivel de cuidados mínimos y se delega el cuidado a su entorno social y familiar, pero la creciente demanda de hospitalización y urgencias por ausencia de programas de atención integral a este grupo de población obliga al replanteamiento de estrategias y modelos de atención basados en gestión del riesgo para minimizar los costos de la atención y mejorar resultados en salud para la población en general.  
+
+				p La Osteoporosis en Colombia, se debe considerar un problema de salud pública y se debe incluir dentro de las patologías crónicas a priorizar por el impacto en calidad de vida de las personas que la padecen. Estas personas suelen estar dentro del grupo de pacientes pluripatológicos y polimedicados que tienen alto impacto económico para los sistemas de salud y sus indicadores de resultado y por lo tanto, deben ser objeto de programas de atención integral con enfoque de riesgo. 
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-8')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=324256&chapterid=9374', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

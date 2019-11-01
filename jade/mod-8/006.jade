@@ -1,0 +1,55 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- menu
+				+menu
+				
+				//- banner modulo 3
+				+banner-video('banner-mod-8')
+				
+				+titulos-modulo('Módulo 8 / ', 'Modelo de Gestión de Riesgo en Osteoporosis. Responsabilidad de la APS')
+					
+				h3 7. Bibliografía
+				
+				ol
+					li Gobierno Vasco (2010). Estrategia para afrontar el reto de la cronicidad en Euskadi.    
+						a(href='https://www.osakidetza.euskadi.eus/contenidos/informacion/documentos_cronicos/eu_cronic/adjuntos/EstrategiaCronicidad.pdf' target='_blank')   https://www.osakidetza.euskadi.eus/contenidos/informacion/documentos_cronicos/eu_cronic/adjuntos/EstrategiaCronicidad.pdf
+					li Gobierno Vasco (2012). País Vasco: transformando el Sistema de Salud 2009 – 2012.    
+						a(href='http://www.euskadi.eus/contenidos/informacion/estrategia_cronicidad/es_cronicos/adjuntos/transformando_sistema_salud.pdf ' target='_blank')   http://www.euskadi.eus/contenidos/informacion/estrategia_cronicidad/es_cronicos/adjuntos/transformando_sistema_salud.pdf 
+					li Kaiser permanente.    
+						a(href='https://healthy.kaiserpermanente.org' target='_blank')   https://healthy.kaiserpermanente.org
+					li Ministerio de Salud de Colombia (2016) Política de Atención Integral en Salud 
+					li Sistema Nacional de Salud. Enfermedades crónicas no transmisibles.    
+						a(href='https://www.ins.gov.co/Direcciones/Vigilancia/Paginas/No-Transmisibles.aspx' target='_blank')   https://www.ins.gov.co/Direcciones/Vigilancia/Paginas/No-Transmisibles.aspx
+					li Vitoria-Gasteiz (2016). Estrategia Vasca de envejecimiento 2015- 2020. Gobierno Vasco.    
+						a(href='http://www.euskadi.eus/contenidos/informacion/publicaciones_ss/es_publica/adjuntos/estrategia%20vasca%20de%20envejecimiento%20activo.pdf' target='_blank')   http://www.euskadi.eus/contenidos/informacion/publicaciones_ss/es_publica/adjuntos/estrategia%20vasca%20de%20envejecimiento%20activo.pdf
+
+
+
+				
+				
+				//- Material modulo
+				+material-modulo('material-mod-8')
+										
+				//- footer section
+				+footer-interno
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=324256&chapterid=9377', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=324256&chapterid=9446', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
