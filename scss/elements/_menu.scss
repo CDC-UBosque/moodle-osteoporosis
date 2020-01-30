@@ -270,6 +270,20 @@
 				    
 				}
 				
+				&:nth-child(10){
+				    background: #666;
+				    .dropdown-menu{
+				     background: #666;
+				    }
+				}
+				
+				&:nth-child(n+11){
+				    background: $color_light_blue;
+				    .dropdown-menu{
+				     background: $color_light_blue;
+				    }
+				}
+				
 				a{
 					position: relative;
 					display: block;
